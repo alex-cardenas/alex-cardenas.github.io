@@ -1,7 +1,30 @@
 <!DOCUTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="jquery-1.11.3.js"></script>
+<script src="jquery.fullPage.min.js"></script>
+<link rel="stylesheet" href="jquery.fullPage.css">
+</head>
 <body>
-Hello, World!
+<div id="wrapper">
+	<div class="section">
+		<img src="/images/image.jpg" />
+	</div>
+	<div class="section">
+		<img src="/images/image.jpg" />
+	</div>
+	<div class="section">
+		<img src="/images/image.jpg" />
+	</div>
+	<div class="section">
+		<img src="/images/image.jpg" />
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$('#wrapper').fullpage();
+});
+</script>
 </body>
-
 </html>
