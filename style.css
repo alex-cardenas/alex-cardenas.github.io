@@ -17,6 +17,13 @@
 
 .NavTitle {
   color: #fff;
+  display: block;
+  float: left;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
 div img {
