@@ -6,5 +6,9 @@
   z-index: 999;
   background-color:#737373;
   opacity: 50%;
+}
 
+div img {
+  width: 1600px;
+  height: auto;
 }
