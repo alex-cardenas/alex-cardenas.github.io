@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+.NavTitle {
+  color: #000;
+}
+
 div img {
   width: 100%;
   height: auto;
