@@ -2,13 +2,22 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<script src="jquery-1.11.3.js"></script>
-<script src="jquery.fullPage.min.js"></script>
-<link rel="stylesheet" href="jquery.fullPage.css">
+<script src="/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/jquery.fullPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="/jquery.fullPage.css" />
+    <script>
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
+    </script>
 </head>
 <body>
-   
-<!--
     <div class="Menu">
             <ul id="MainMenuItem">
                     <li><a>Home</a></li>
@@ -23,21 +32,6 @@
                     <li><a>Contact</a></li>
             </ul>
     </div>
--->
-   
-<nav class="NavBar">
-	<ul class="MenuItems">
-		<li>Home</li>
-		<li>Galleries
-			<li class="SubMenuItem">Stallae</li>
-			<li class="SubMenuItem">Tierra</li>
-			<li class="SubMenuItem">Grad 2018</li>
-		</li>
-		<li>About</li>
-		<li>Contact</li>
-	</ul>
-
-</nav>
 <div id="wrapper">
 	<div class="section">
 		<img src="images/H3Ok_MW.jpg" />
@@ -49,14 +43,13 @@
 		<img src="images/JumpingGrads.JPG" />
 	</div>
 </div>
-<script>
-$(document).ready(function(){
-	$('#wrapper').fullpage({
-    scrollBar: false;
-    navigation: true;
-    scrollingSpeed: 1000;
-  });
-});
+    
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            navigation: true;
+        });
+    });
 </script>
 </body>
 </html>

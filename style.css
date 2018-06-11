@@ -1,4 +1,4 @@
-.NavBar {
+ul {
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
@@ -6,7 +6,7 @@
 	border-color: rgba(6,6,6,0.4);
 }
 
-.MenuItems {
+ul li {
     float: left;
     width: 200px;
     height: 40px;
@@ -17,21 +17,21 @@
     font-size: 20px;
 }
 
-#MainMenuItem a {
+ul li a {
     text-decoration: none;
     color: white;
     display: block;
 }
 
-#MainMenuItem a:hover { 
+ul li a:hover { 
     background-color: green;
 }
 
-.SubMenuItem {
+ul li ul li {
     display: none;
 }
 
-.MenuItem:hover .SubMenuItem {
+ul li:hover ul li {
     display: block;
 }
 
