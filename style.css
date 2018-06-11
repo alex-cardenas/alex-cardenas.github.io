@@ -2,8 +2,8 @@ ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    color: #fff;
     position: fixed;
+    border-color: rgba(6,6,6,0.4);
 }
 
 ul li {
@@ -17,13 +17,13 @@ ul li {
     font-size: 20px;
 }
 
-ul li a {
+#MainMenuItem a {
     text-decoration: none;
     color: white;
     display: block;
 }
 
-ul li a:hover { 
+#MainMenuItem a:hover { 
     background-color: green;
 }
 
