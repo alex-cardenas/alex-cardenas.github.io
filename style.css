@@ -1,12 +1,12 @@
-ul { 
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    position: fixed;
-    border-color: rgba(6,6,6,0.4);
+.NavBar {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: fixed;
+	border-color: rgba(6,6,6,0.4);
 }
 
-ul li {
+.MenuItems {
     float: left;
     width: 200px;
     height: 40px;
@@ -27,11 +27,11 @@ ul li {
     background-color: green;
 }
 
-ul li ul li {
+.SubMenuItem {
     display: none;
 }
 
-ul li:hover ul li {
+.MenuItem:hover .SubMenuItem {
     display: block;
 }
 
