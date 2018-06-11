@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="jquery-1.11.3.js"></script>
 <script src="jquery.fullPage.min.js"></script>
-<link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+<link rel="stylesheet" href="jquery.fullPage.css">
 </head>
 <body>
 <div id="navbar">
@@ -13,13 +13,13 @@
   <a class="NavTitle" href="#SpronCert">SpronCert</a>
 </div>
 <div id="wrapper">
-	<div class="section" data-menuanchor="Stallae">
+	<div class="section" data-anchor="Stallae">
 		<img src="/images/H3Ok_MW.jpg" />
 	</div>
-	<div class="section" data-menuanchor="Trails">
+	<div class="section" data-anchor="Trails">
 		<img src="/images/65.jpg" />
 	</div>
-	<div class="section" data-menuanchor="SpronCert">
+	<div class="section" data-anchor="SpronCert">
 		<img src="/images/boomboomboom.jpg" />
 	</div>
 </div>
@@ -28,7 +28,7 @@ $(document).ready(function(){
 	$('#wrapper').fullpage({
     scrollBar: false;
     navigation: true;
-    scrollingSpeed: 300;
+    scrollingSpeed: 1000;
   });
 });
 </script>
