@@ -92,7 +92,6 @@ li.dropdown {
 
 .dropdown-content a {
     color: white;
-
     text-decoration: none;
     display: block;
     text-align: left;
@@ -104,16 +103,13 @@ li.dropdown {
     color: black;
     display: block;
 }
-/*
-.horizontal-scrolling {
-    display: none;
-}
 
+/* These bottom two are for Vertical Navigation Dots */
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
     background: white;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     margin: -4px 0 0 -4px;
 }
       
@@ -128,7 +124,33 @@ li.dropdown {
     box-sizing: border-box;
     border: 1px solid white;
 }
-*/
+/* This is for Slide Navigation Arrows */
+div.fp-controlArrow.fp-next {
+    /*background: red; This changes background rectangle to color*/
+    /*background-color: green;This changes background rectangle to color*/
+    /*color: green; Cant figure out what this does*/
+    /*border-color: orange; This changes the full rectangle to color*/
+    /*outline-color: green;*/
+    border-bottom-color: rgba(0, 0, 0, 0); /* This changes the color for the top right blank corner*/
+    border-bottom-style: solid;
+    border-bottom-width: 38.5px;
+    border-left-color: rgba(223,223,223,0.3); /* THIS CHANGES THE COLOR */
+    border-left-style: solid;
+    border-left-width: 34px;
+    border-right-color: rgb(150, 15, 15);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgba(0, 0, 0, 0); /* This changes the color for the bottom right blank corner*/
+    border-top-style: solid;
+    
+
+}
+
+div.fp-controlArrow.fp-prev {
+    border-left-color: rgba(14,255,232,0.3); /* THIS CHANGES THE COLOR */
+    border-right-color: rgba(223,223,223,0.3);
+}
+
 
 div img {
   width: 100%;
