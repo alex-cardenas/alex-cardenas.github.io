@@ -104,49 +104,7 @@ li.dropdown {
     color: black;
     display: block;
 }
-
 /*
-.MainMenuItem:hover {
-    color: black;
-    background-color: floralwhite;
-    cursor: pointer;
-}
-
-.MainMenuItem:hover .SubMenuItem {
-    float: left;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    color: black;
-    padding: 10px 20px;
-    position: relative;
-    transition-duration: 0.5;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.SubMenuItem {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.SubMenuItem a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-
 .horizontal-scrolling {
     display: none;
 }
