@@ -1,38 +1,113 @@
-ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-	position: fixed;
-	border-color: rgba(6,6,6,0.4);
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(223,223,223,0.3);
+    top: 0;
+    margin: 0;
+    z-index: 999;
+    padding: 0px;
+    list-style: none;
+    float: left;
+    transition-duration: 0.5;
 }
 
-ul li {
+.MainMenuItem {
     float: left;
-    width: 200px;
     height: 40px;
-    background-color: rgba(6,6,6,0.4);
-    opacity: .8;
-    line-height: 40px;
+    font-size: 20px;
     text-align: center;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    transition-duration: 0.5;
+}
+li {
+    float: left;
     font-size: 20px;
 }
 
-ul li a {
-    text-decoration: none;
+li a, .dropbtn {
+    display: inline-block;
     color: white;
-    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
-ul li a:hover { 
-    background-color: green;
+li a:hover, .dropdown:hover .dropbtn {
+    color: black;
+    background-color: rgba(14,255,232,0.3);
 }
 
-ul li ul li {
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
     display: none;
+    position: absolute;
+    background-color: rgba(223,223,223,0.3);
+    min-width: 160px;
+    
+    /*box-shadow: 0px 8px 16px 0px rgba(14,255,232,0.3); */
+    z-index: 1;
 }
 
-ul li:hover ul li {
+.dropdown-content a {
+    color: white;
+
+    text-decoration: none;
     display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    color: black;
+    display: block;
+}
+
+/*
+.MainMenuItem:hover {
+    color: black;
+    background-color: floralwhite;
+    cursor: pointer;
+}
+
+.MainMenuItem:hover .SubMenuItem {
+    float: left;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    position: relative;
+    transition-duration: 0.5;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.SubMenuItem {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.SubMenuItem a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 
@@ -59,6 +134,7 @@ ul li:hover ul li {
     box-sizing: border-box;
     border: 1px solid white;
 }
+*/
 
 div img {
   width: 100%;

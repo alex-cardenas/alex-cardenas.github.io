@@ -18,9 +18,23 @@
         fadingEffect: true,
         slidesNavigation: true,
         
+        menu: '#menu',
+        css3: false,
     });
 });
 </script>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120700082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120700082-1');
+</script>
+
+    
 <!--    
     <script>
 window.onload = function() {
@@ -49,7 +63,7 @@ window.onload = function() {
     <img src="images/JumpingGrads.JPG" /></section>
 </div>
     
-    
+  <!--  
 <div class="menu">
     <ul>
         <li class="MainMenuItem"><a>Home</a></li>
@@ -64,6 +78,31 @@ window.onload = function() {
         <li class="MainMenuItem"><a>Contact</a></li>
     </ul>
 </div>
+-->
+<nav class="menu">
+    <ul>
+        <li class="MainMenuItem"><a>Home</a></li>
+        <li class="MainMenuItem"><a>About</a></li>
+<!--
+        <li class="MainMenuItem" class="dropdown"><a>Galleries</a>
+            <ul>
+                <li class="SubMenuItem"><a>Stallae</a></li>
+                <li class="SubMenuItem"><a>Tierra</a></li>
+                <li class="SubMenuItem"><a>Graduation 2018</a></li>
+            </ul>
+        </li>
+-->
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" class="MainMenuItem">Galleries</a>
+            <div class="dropdown-content">
+                <a href="#">Stallae</a>
+                <a href="#">Teirra</a>
+                <a href="#">Grad 2018</a>
+            </div>
+        </li>
+        <li class="MainMenuItem"><a>Contact</a></li>
+    </ul>
+</nav>
 
 </body>
 </html>
