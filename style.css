@@ -7,13 +7,13 @@
     z-index: 999;
     padding: 0px;
     list-style: none;
-    float: left;
+    float: right;
     transition-duration: 0.5;
 }
 
 .MainMenuItem {
-    float: left;
-    height: 40px;
+    float: right;
+
     font-size: 20px;
     text-align: center;
     text-decoration: none;
@@ -24,8 +24,12 @@
     transition-duration: 0.5;
 }
 li {
-    float: left;
+    float: right;
     font-size: 20px;
+}
+
+#Galleries {
+    margin-top: 10px;
 }
 
 li a, .dropbtn {
@@ -51,7 +55,7 @@ li.dropdown {
     min-width: 160px;
     
     /*box-shadow: 0px 8px 16px 0px rgba(14,255,232,0.3); */
-    z-index: 1;
+    z-index: 999;
 }
 
 .dropdown-content a {
@@ -62,7 +66,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: rgba(14,255,232,0.3)}
 
 .dropdown:hover .dropdown-content {
     color: black;
