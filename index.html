@@ -1,10 +1,41 @@
 <!DOCUTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 <script src="/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="/jquery.fullPage.js"></script>
 	<link rel="stylesheet" type="text/css" href="/jquery.fullPage.css" />
+    
+<script>
+    $(document).ready(function() {
+	$('#fullpage').fullpage({
+        sectionSelector: '.vertical-scrolling',
+        slideSelector: '.horizontal-scrolling',
+        
+        scrollingSpeed: 700,
+        navigation: true,
+        navigationPosition: 'right',
+        fadingEffect: true,
+
+        
+        menu: '#menu',
+        css3: false,
+    });
+});
+</script>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120700082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120700082-1');
+</script>
+
+    
+<!--    
     <script>
 window.onload = function() {
     if (window.jQuery) {  
@@ -16,40 +47,62 @@ window.onload = function() {
     }
 }
     </script>
+!-->
 </head>
 <body>
-    <div class="Menu">
-            <ul id="MainMenuItem">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Galleries</a>
-                        <ul id="SubMenuItem">
-                                <li><a>Stallae</a></li>
-                                <li><a>Tierra</a></li>
-                                <li><a>Graduation 2018</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Contact</a></li>
-            </ul>
-    </div>
-<div id="wrapper">
-	<div class="section">
-		<img src="images/H3Ok_MW.jpg" />
-	</div>
-	<div class="section">
-		<img src="images/Tierra.jpg" />
-	</div>
-	<div class="section">
-		<img src="images/JumpingGrads.JPG" />
-	</div>
+    
+<div id="fullpage">
+	<section class="vertical-scrolling">
+        <img src="images/H3Ok_MW.jpg" />
+            <div class="horizontal-scrolling"> 
+            <img src="images/65.jpg" /></div>
+    </section>
+	<section class="vertical-scrolling">
+        <img src="images/Tierra.jpg" /></section>
+	<section class="vertical-scrolling">
+    <img src="images/JumpingGrads.JPG" /></section>
 </div>
     
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            navigation: true;
-        });
-    });
-</script>
+  <!--  
+<div class="menu">
+    <ul>
+        <li class="MainMenuItem"><a>Home</a></li>
+        <li class="MainMenuItem"><a>About</a></li>
+        <li class="MainMenuItem"><a>Galleries</a>
+            <ul id="SubMenuItem">
+            <li><a>Stallae</a></li>
+            <li><a>Tierra</a></li>
+            <li><a>Graduation 2018</a></li>
+            </ul>
+        </li>
+        <li class="MainMenuItem"><a>Contact</a></li>
+    </ul>
+</div>
+-->
+<nav class="menu">
+    <ul>
+<!--
+        <li class="MainMenuItem" class="dropdown"><a>Galleries</a>
+            <ul>
+                <li class="SubMenuItem"><a>Stallae</a></li>
+                <li class="SubMenuItem"><a>Tierra</a></li>
+                <li class="SubMenuItem"><a>Graduation 2018</a></li>
+            </ul>
+        </li>
+-->
+        <li class="MainMenuItem"><a>Contact</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" class="MainMenuItem" id="Galleries">Galleries<i class="arrow down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Stallae</a>
+                <a href="#">Teirra</a>
+                <a href="#">Grad 2018</a>
+            </div>
+        </li>
+        <li class="MainMenuItem"><a>About</a></li>
+        <li class="MainMenuItem"><a>Home</a></li>
+    </ul>
+</nav>
+
 </body>
 </html>
