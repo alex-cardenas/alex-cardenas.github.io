@@ -1,64 +1,131 @@
-<!DOCTYPE html>
+<!DOCUTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title> Alex Cardenas - Portfolio </title>
-        
-        <!-- Bootstrap CSS (min) -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        
-        <!-- Optional Theme -->
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        
-    </head>
+<head>
+<link rel="stylesheet" href="css/style_old.css">
+<script src="/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/jquery.fullPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="/jquery.fullPage.css" />
     
-    <body>
-        
-        <div class="container">
-            <div class="row">
-                <!-- Column on a Large screen, displays at 1 column width | Background color 'warning'(5 different colors) -->
-                <div class="col-lg-1 bg-warning">
-                    1
-                </div>
-                <div class="col-lg-1 bg-info">
-                    2
-                </div>
-                <div class="col-lg-1 bg-danger">
-                    3
-                </div>
-                <div class="col-lg-1 bg-success">
-                    4
-                </div>
-                <div class="col-lg-1 bg-warning">
-                    5
-                </div>
-                <div class="col-lg-1 bg-info">
-                    6
-                </div>
-                <div class="col-lg-1 bg-danger">
-                    7
-                </div>
-                <div class="col-lg-1 bg-success">
-                    8
-                </div>
-                <div class="col-lg-1 bg-warning">
-                    9
-                </div>
-                <div class="col-lg-1 bg-info">
-                    10
-                </div>
-                <div class="col-lg-1 bg-danger">
-                    11
-                </div>
-                <div class="col-lg-1 bg-success">
-                    12
-                </div>
-                
+<script>
+    $(document).ready(function() {
+	$('#fullpage').fullpage({
+        scrollingSpeed: 700,
+        navigation: false,
+        navigationPosition: 'right',
+        fadingEffect: false,
+
+        slidesNavigation: false,
+        menu: '#menu',
+        css3: false,
+    });
+});
+</script>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120700082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120700082-1');
+</script>
+
+    
+<!--    
+    <script>
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
+    </script>
+!-->
+</head>
+<body>
+    
+<div id="fullpage">
+	<div class="section">
+            <div class="slide" id="slide1-1"> 
+                <img src="images/H3Ok_MW.jpg" />
             </div>
+            <div class="slide" id="slide1-2"> 
+                <img src="images/65.jpg" />
+            </div>
+            <div class="slide" id="slide1-3"> 
+                <img src="images/360.jpg" />
+            </div>
+            <div class="slide" id="slide1-4"> 
+                <img src="images/boom.jpg" />
+            </div>
+            <div class="slide" id="slide1-5"> 
+                <img src="images/lightning-1.jpg" />
+            </div>
+            <div class="slide" id="slide1-6"> 
+                <img src="images/lightning-2.jpg" />
+            </div>
+            <div class="slide" id="slide1-7"> 
+                <img src="images/lightning-3.jpg" />
+            </div>
+            <div class="slide" id="slide1-8"> 
+                <img src="images/lightning-4.jpg" />
+            </div>
+    </div>
+	<div class="section">
+        <div class="slide" id="slide1-1"> 
+            <img src="images/JumpingGrads.JPG" />
         </div>
-        
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <!-- Boostrap Js (min)-->
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+        <div class="slide" id="slide1-2"> 
+            <img src="images/meJ.jpg" />
+        </div>
+        <div class="slide" id="slide1-3"> 
+            <img src="images/panorama.jpg" />
+        </div>
+        <div class="slide" id="slide1-4"> 
+            <img src="images/star-1.jpg" />
+        </div>
+    </div>
+	<div class="section">
+        <div class="slide" id="slide1-1"> 
+            <img src="images/Tierra.jpg" />
+        </div>
+        <div class="slide" id="slide1-2"> 
+            <img src="images/le-1.jpg" />
+        </div>
+        <div class="slide" id="slide1-3"> 
+            <img src="images/le-2.jpg" />
+        </div>
+        <div class="slide" id="slide1-4"> 
+            <img src="images/PurpleFlower.jpg" />
+        </div>
+        <div class="slide" id="slide1-7"> 
+            <img src="images/RedFlower.jpg" />
+        </div>
+        <div class="slide" id="slide1-8"> 
+            <img src="images/PITA.jpg" />
+        </div>
+    </div>
+</div>
+    
+<nav class="menu">
+    <ul>
+        <li class="MainMenuItem"><a>Contact</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" class="MainMenuItem" id="Galleries">Galleries<i class="arrow down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Stallae</a>
+                <a href="#">Teirra</a>
+                <a href="#">Grad 2018</a>
+            </div>
+        </li>
+        <li class="MainMenuItem"><a>About</a></li>
+        <li class="MainMenuItem"><a>Home</a></li>
+    </ul>
+</nav>
+
+</body>
 </html>
