@@ -1,33 +1,122 @@
-<!DOCTYPE html>
+<!docutype html>
 <html>
     <head>
         <meta charset="utf-8">
         <title> Alex Cardenas - Portfolio </title>
-        <!-- Bootstrap CSS (min)
-        <link rel="stylesheet" href="css/bootstrap.min.css">  -->
-        <!-- Optional Theme 
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
-        <!-- Style Sheet -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- jQuery 
-        <script src="js/jquery-3.3.1.min.js"></script>-->
-        <script   src="https://code.jquery.com/jquery-3.3.1.js"></script>  
-
-        <!-- Boostrap Js (min)
-        <script src="js/bootstrap.min.js"></script>  -->
-        <!-- FullPage.js -->
-        <script src="js/jquery.fullPage.js"></script>
-    </head>
-    
-    <body>
-        <div id="fullpage">
-            <section><h1>Section 1</h1></section>
-            <section><h1>Section 2</h1></section>
-            <section><h1>Section 3</h1></section>
-            <section><h1>Section 4</h1></section>
-        </div>
+        <!-- FullPage CSS -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css" />
+        <!-- Custum CSS -->
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+        <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+         <!-- FullPage js -->
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <!-- FullPage Init -->
         <script type="text/javascript">
-            $('#fullpage').fullpage();
-        </script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    //Navigation
+                    menu: '#menu',
+                    lockAnchors: false,
+                    anchors:['firstPage', 'secondPage'],
+                    navigation: true,
+                    navigationPosition: 'right',
+                    navigationTooltips: ['firstSlide', 'secondSlide'],
+                    showActiveTooltip: false,
+                    slidesNavigation: true,
+                    slidesNavPosition: 'bottom',
+
+                    //Scrolling
+                    css3: true,
+                    scrollingSpeed: 850,
+                    autoScrolling: true,
+                    fitToSection: true,
+                    fitToSectionDelay: 1000,
+                    scrollBar: false,
+                    easing: 'easeInOutCubic',
+                    easingcss3: 'ease',
+                    loopBottom: true,
+                    loopTop: false,
+                    loopHorizontal: true,
+                    continuousVertical: false,
+                    continuousHorizontal: false,
+                    scrollHorizontally: true,
+                    interlockedSlides: false,
+                    dragAndMove: false,
+                    offsetSections: false,
+                    resetSliders: false,
+                    fadingEffect: true,
+                    normalScrollElements: '#element1, .element2',
+                    scrollOverflow: false,
+                    scrollOverflowReset: false,
+                    scrollOverflowOptions: null,
+                    touchSensitivity: 15,
+                    normalScrollElementTouchThreshold: 5,
+                    bigSectionsDestination: null,
+
+                    //Accessibility
+                    keyboardScrolling: true,
+                    animateAnchor: true,
+                    recordHistory: true,
+
+                    //Design
+                    controlArrows: false,
+                    verticalCentered: true,
+                    sectionsColor : ['#ccc', '#fff'],
+                    paddingTop: '3em',
+                    paddingBottom: '10px',
+                    fixedElements: '#header, .footer',
+                    responsiveWidth: 0,
+                    responsiveHeight: 0,
+                    responsiveSlides: false,
+                    parallax: false,
+                    parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+                    //Custom selectors
+                    sectionSelector: '.section',
+                    slideSelector: '.slide',
+
+                    lazyLoading: true,
+
+                    //events
+                    onLeave: function(index, nextIndex, direction){},
+                    afterLoad: function(anchorLink, index){},
+                    afterRender: function(){},
+                    afterResize: function(){},
+                    afterResponsive: function(isResponsive){},
+                    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+                    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+
+                });
+            });
+	</script>
+    </head>
+    <body>
+        <div id="navbar">
+            <ul id="mainMenu">
+                <li class="mainMenuItem">Home</li>
+                <li class="mainMenuItem" id="Galleries">Galleries</li>
+                    <ul id="subMenu">
+                        <li class="subMenuItem">Stars</li>
+                        <li class="subMenuItem">Earth</li>
+                        <li class="subMenuItem">Grad 2018</li>
+                    </ul>
+                <li class="mainMenuItem">About</li>
+                <li class="mainMenuItem">Contact</li>
+            </ul>
+        </div>
+        <div id="fullpage">
+            <div class="section">
+                    <div class="slide"> Slide 1-1 </div>
+                    <div class="slide"> Slide 1-2 </div>
+                    <div class="slide"> Slide 1-3 </div>
+                    <div class="slide"> Slide 1-4 </div>
+                </div>
+            <div class="section">Section 2</div>
+            <div class="section">Section 3</div>
+            <div class="section">Section 4</div>
+        </div>
     </body>
 </html>
