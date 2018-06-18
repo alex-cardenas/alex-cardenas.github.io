@@ -41,16 +41,16 @@
                     loopTop: false,
                     loopHorizontal: true,
                     continuousVertical: false,
-                    continuousHorizontal: false,
-                    scrollHorizontally: true,
-                    interlockedSlides: false,
-                    dragAndMove: false,
-                    offsetSections: false,
-                    resetSliders: false,
-                    fadingEffect: true,
+                    continuousHorizontal: false, //extension required
+                    scrollHorizontally: false, //extension required
+                    interlockedSlides: false, //extension required
+                    dragAndMove: false, //extension required
+                    offsetSections: false, //extension required
+                    resetSliders: false, //extension required
+                    fadingEffect: false, //extension required
                     normalScrollElements: '#element1, .element2',
-                    scrollOverflow: false,
-                    scrollOverflowReset: false,
+                    scrollOverflow: true,
+                    scrollOverflowReset: false, //extension required
                     scrollOverflowOptions: null,
                     touchSensitivity: 15,
                     normalScrollElementTouchThreshold: 5,
@@ -70,8 +70,8 @@
                     fixedElements: '#header, .footer',
                     responsiveWidth: 0,
                     responsiveHeight: 0,
-                    responsiveSlides: false,
-                    parallax: false,
+                    responsiveSlides: false, //extension required
+                    parallax: false, //extension required
                     parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
                     //Custom selectors
@@ -94,19 +94,21 @@
 	</script>
     </head>
     <body>
-        <div id="navbar">
+        <!-- Navigation Menu -->
+        <nav id="navbar">
             <ul id="mainMenu">
-                <li class="mainMenuItem">Home</li>
-                <li class="mainMenuItem" id="Galleries">Galleries</li>
-                    <ul id="subMenu">
-                        <li class="subMenuItem">Stars</li>
-                        <li class="subMenuItem">Earth</li>
-                        <li class="subMenuItem">Grad 2018</li>
+                <li class="mainMenuItem"><a href="index.html">Home</a></li>
+                <li class="mainMenuItem" id="Galleries"><a href="galleries.html">Galleries</a></li>
+                    <ul class="subMenu">
+                        <li class="subMenuItem"><a href="">Stars</a></li>
+                        <li class="subMenuItem"><a href="">Earth</a></li>
+                        <li class="subMenuItem"><a href="">Grad 2018</a></li>
                     </ul>
-                <li class="mainMenuItem">About</li>
-                <li class="mainMenuItem">Contact</li>
+                <li class="mainMenuItem"><a href="about.html">About</a></li>
+                <li class="mainMenuItem"><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+        <!-- Sections -->
         <div id="fullpage">
             <div class="section">
                     <div class="slide"> Slide 1-1 </div>
