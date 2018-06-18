@@ -48,16 +48,18 @@ a:active {
     z-index: 1;
 }
 
+.mainMenuItem:hover .subMenu {
+    display: inline-block;
+}
+
 .subMenu a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
 }
 
 .subMenu a:hover {background-color: #ddd;}
 
-#Galleries:hover .subMenuItem {display: block;}
 
 .subMenu:hover #Galleries {background-color: #3e8e41;}
 
