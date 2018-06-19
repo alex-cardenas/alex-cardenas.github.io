@@ -1,10 +1,3 @@
-@font-face {
-font-family: "Cooper Hewitt Light";
-src: 
-url("font/CooperHewitt-Light.otf") format("opentype"),
-url("font/cooperhewitt-light-webfont.ttf") format("truetype")
-}
-
 a:link {
     color: white;
     text-decoration: none;
