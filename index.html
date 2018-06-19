@@ -20,16 +20,16 @@
                     //Navigation
                     menu: '#menu',
                     lockAnchors: false,
-                    anchors:['firstPage', 'secondPage'],
+                    anchors:['Stellae', 'Earth', 'Grad 2018'],
                     navigation: true,
                     navigationPosition: 'right',
-                    navigationTooltips: ['firstSlide', 'secondSlide'],
+                    navigationTooltips: ['Stellae', 'Earth', 'Grad 2018'],
                     showActiveTooltip: false,
                     slidesNavigation: true,
                     slidesNavPosition: 'bottom',
 
                     //Scrolling
-                    css3: true,
+                    css3: false,
                     scrollingSpeed: 850,
                     autoScrolling: true,
                     fitToSection: true,
@@ -49,7 +49,7 @@
                     resetSliders: false, //extension required
                     fadingEffect: false, //extension required
                     normalScrollElements: '#element1, .element2',
-                    scrollOverflow: true,
+                    scrollOverflow: false ,
                     scrollOverflowReset: false, //extension required
                     scrollOverflowOptions: null,
                     touchSensitivity: 15,
@@ -59,14 +59,14 @@
                     //Accessibility
                     keyboardScrolling: true,
                     animateAnchor: true,
-                    recordHistory: true,
+                    recordHistory: false,
 
                     //Design
                     controlArrows: false,
                     verticalCentered: true,
-                    sectionsColor : ['#ccc', '#fff'],
-                    paddingTop: '3em',
-                    paddingBottom: '10px',
+                    sectionsColor : ['#ccc', '#ccc'],
+                    paddingTop: '0em',
+                    paddingBottom: '0px',
                     fixedElements: '#header, .footer',
                     responsiveWidth: 0,
                     responsiveHeight: 0,
@@ -113,14 +113,11 @@
         <!-- Sections -->
         <div id="fullpage">
             <div class="section">
-                    <div class="slide"> Slide 1-1 </div>
-                    <div class="slide"> Slide 1-2 </div>
-                    <div class="slide"> Slide 1-3 </div>
-                    <div class="slide"> Slide 1-4 </div>
+                    <div class="slide"><img id="gif" src="images/meJ.jpg"></div>
+                    <div class="slide"><img src="images/mw_gif.gif"></div>
                 </div>
-            <div class="section">Section 2</div>
+            <div class="section"><img src="images/star-2.jpg"/></div>
             <div class="section">Section 3</div>
-            <div class="section">Section 4</div>
         </div>
     </body>
 </html>
