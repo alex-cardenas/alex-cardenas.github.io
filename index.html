@@ -1,131 +1,142 @@
-<!DOCUTYPE html>
+<!docutype html>
 <html>
-<head>
-<link rel="stylesheet" href="/style.css">
-<script src="/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="/jquery.fullPage.js"></script>
-	<link rel="stylesheet" type="text/css" href="/jquery.fullPage.css" />
-    
-<script>
-    $(document).ready(function() {
-	$('#fullpage').fullpage({
-        scrollingSpeed: 700,
-        navigation: false,
-        navigationPosition: 'right',
-        fadingEffect: false,
+    <head>
+        <meta charset="utf-8">
+        <title> Alex Cardenas - Portfolio </title>
+        <!-- FullPage CSS -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css" />
+        <!-- Custum CSS -->
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <!-- Google Font: Comfortaa -->
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+        <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+         <!-- FullPage js -->
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <!-- FullPage Init -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    //Navigation
+                    menu: '#menu',
+                    lockAnchors: false,
+                    anchors:['Stellae', 'Earth', 'Grad 2018'],
+                    navigation: true,
+                    navigationPosition: 'right',
+                    navigationTooltips: ['Stellae', 'Earth', 'Grad 2018'],
+                    showActiveTooltip: false,
+                    slidesNavigation: true,
+                    slidesNavPosition: 'bottom',
 
-        slidesNavigation: false,
-        menu: '#menu',
-        css3: false,
-    });
-});
-</script>
-    
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120700082-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+                    //Scrolling
+                    css3: false,
+                    scrollingSpeed: 700,
+                    autoScrolling: true,
+                    fitToSection: true,
+                    fitToSectionDelay: 1000,
+                    scrollBar: false,
+                    easing: 'easeInOutCubic',
+                    easingcss3: 'ease',
+                    loopBottom: true,
+                    loopTop: false,
+                    loopHorizontal: true,
+                    continuousVertical: false,
+                    continuousHorizontal: false, //extension required
+                    scrollHorizontally: false, //extension required
+                    interlockedSlides: false, //extension required
+                    dragAndMove: false, //extension required
+                    offsetSections: false, //extension required
+                    resetSliders: false, //extension required
+                    fadingEffect: false, //extension required
+                    normalScrollElements: '#element1, .element2',
+                    scrollOverflow: false ,
+                    scrollOverflowReset: false, //extension required
+                    scrollOverflowOptions: null,
+                    touchSensitivity: 15,
+                    normalScrollElementTouchThreshold: 5,
+                    bigSectionsDestination: null,
 
-  gtag('config', 'UA-120700082-1');
-</script>
+                    //Accessibility
+                    keyboardScrolling: true,
+                    animateAnchor: true,
+                    recordHistory: false,
 
-    
-<!--    
-    <script>
-window.onload = function() {
-    if (window.jQuery) {  
-        // jQuery is loaded  
-        alert("Yeah!");
-    } else {
-        // jQuery is not loaded
-        alert("Doesn't Work");
-    }
-}
-    </script>
-!-->
-</head>
-<body>
-    
-<div id="fullpage">
-	<div class="section">
-            <div class="slide" id="slide1-1"> 
-                <img src="images/H3Ok_MW.jpg" />
-            </div>
-            <div class="slide" id="slide1-2"> 
-                <img src="images/65.jpg" />
-            </div>
-            <div class="slide" id="slide1-3"> 
-                <img src="images/360.jpg" />
-            </div>
-            <div class="slide" id="slide1-4"> 
-                <img src="images/boom.jpg" />
-            </div>
-            <div class="slide" id="slide1-5"> 
-                <img src="images/lightning-1.jpg" />
-            </div>
-            <div class="slide" id="slide1-6"> 
-                <img src="images/lightning-2.jpg" />
-            </div>
-            <div class="slide" id="slide1-7"> 
-                <img src="images/lightning-3.jpg" />
-            </div>
-            <div class="slide" id="slide1-8"> 
-                <img src="images/lightning-4.jpg" />
-            </div>
-    </div>
-	<div class="section">
-        <div class="slide" id="slide1-1"> 
-            <img src="images/JumpingGrads.JPG" />
-        </div>
-        <div class="slide" id="slide1-2"> 
-            <img src="images/meJ.jpg" />
-        </div>
-        <div class="slide" id="slide1-3"> 
-            <img src="images/panorama.jpg" />
-        </div>
-        <div class="slide" id="slide1-4"> 
-            <img src="images/star-1.jpg" />
-        </div>
-    </div>
-	<div class="section">
-        <div class="slide" id="slide1-1"> 
-            <img src="images/Tierra.jpg" />
-        </div>
-        <div class="slide" id="slide1-2"> 
-            <img src="images/le-1.jpg" />
-        </div>
-        <div class="slide" id="slide1-3"> 
-            <img src="images/le-2.jpg" />
-        </div>
-        <div class="slide" id="slide1-4"> 
-            <img src="images/PurpleFlower.jpg" />
-        </div>
-        <div class="slide" id="slide1-7"> 
-            <img src="images/RedFlower.jpg" />
-        </div>
-        <div class="slide" id="slide1-8"> 
-            <img src="images/PITA.jpg" />
-        </div>
-    </div>
-</div>
-    
-<nav class="menu">
-    <ul>
-        <li class="MainMenuItem"><a>Contact</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn" class="MainMenuItem" id="Galleries">Galleries<i class="arrow down"></i></a>
-            <div class="dropdown-content">
-                <a href="#">Stallae</a>
-                <a href="#">Teirra</a>
-                <a href="#">Grad 2018</a>
-            </div>
-        </li>
-        <li class="MainMenuItem"><a>About</a></li>
-        <li class="MainMenuItem"><a>Home</a></li>
-    </ul>
-</nav>
+                    //Design
+                    controlArrows: false,
+                    verticalCentered: true,
+                    sectionsColor : ['#000', '#000', '#000'],
+                    paddingTop: '0em',
+                    paddingBottom: '0px',
+                    fixedElements: '#header, .footer',
+                    responsiveWidth: 0,
+                    responsiveHeight: 0,
+                    responsiveSlides: false, //extension required
+                    parallax: false, //extension required
+                    parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
-</body>
+                    //Custom selectors
+                    sectionSelector: '.section',
+                    slideSelector: '.slide',
+
+                    lazyLoading: true,
+
+                    //events
+                    onLeave: function(index, nextIndex, direction){},
+                    afterLoad: function(anchorLink, index){},
+                    afterRender: function(){},
+                    afterResize: function(){},
+                    afterResponsive: function(isResponsive){},
+                    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+                    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+
+                });
+            });
+	</script>
+    </head>
+    <body>
+        <!-- Navigation Menu -->
+        <nav id="navbar">
+            <ul id="mainMenu">
+                <li class="mainMenuItem"><a href="index.html">Home</a></li>
+                <li class="mainMenuItem" id="Galleries"><a href="galleries.html">Galleries</a></li>
+                        <ul class="dropdown">
+                            <div class="subMenu">
+                                <li class="subMenuItem"><a href="stars.html">Stars</a></li>
+                                <li class="subMenuItem"><a href="earth.html">Earth</a></li>
+                                <li class="subMenuItem"><a href="grad.html">Grad 2018</a></li>
+                            </div>
+                        </ul>
+                <li class="mainMenuItem"><a href="about.html">About</a></li>
+                <li class="mainMenuItem"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Sections -->
+        <div id="fullpage">
+            <div class="section">
+                    <div class="slide">
+                        <img id="gif" src="images/360.jpg">
+                        <div class="bottomRight fixed">
+                            <a href="stars.html">Stellae</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/mw_gif.gif">
+                    </div>
+                </div>
+            <div class="section">
+                <img src="images/Tierra.jpg"/>
+                <div class="bottomRight">
+                    <a href="earth.html">Teirra</a>
+                </div>
+            </div>
+            <div class="section">
+                <img src="images/meJ.jpg">
+                <div class="bottomRight">
+                    <a href="grad.html">Grad 2018</a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
