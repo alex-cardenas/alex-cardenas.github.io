@@ -1,3 +1,10 @@
+@font-face {
+font-family: "Cooper Hewitt Light";
+src: 
+url("font/CooperHewitt-Light.otf") format("opentype"),
+url("font/cooperhewitt-light-webfont.ttf") format("truetype")
+}
+
 a:link {
     color: white;
     text-decoration: none;
@@ -147,9 +154,17 @@ div img {
 
 }
 
-.bottomRight {
+.bottomRight,
+.testclass {
+    font-family: 'Comfortaa';
+    letter-spacing: 3px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 999;
     color: white;
-    bottom: 6%;
-    right: 3%;
-    font-size: 18px;
+    bottom: 7%;
+    left: 2%;
+    font-size: 20px;
 }
