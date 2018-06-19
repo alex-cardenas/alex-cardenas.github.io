@@ -154,8 +154,7 @@ div img {
 
 }
 
-.bottomRight,
-.testclass {
+.bottomRight{
     font-family: 'Comfortaa';
     letter-spacing: 3px;
     display: block;
@@ -167,4 +166,8 @@ div img {
     bottom: 7%;
     left: 2%;
     font-size: 20px;
+}
+
+.fixed {
+    position: fixed !important;
 }
