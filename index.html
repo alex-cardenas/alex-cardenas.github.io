@@ -30,7 +30,7 @@
 
                     //Scrolling
                     css3: false,
-                    scrollingSpeed: 850,
+                    scrollingSpeed: 700,
                     autoScrolling: true,
                     fitToSection: true,
                     fitToSectionDelay: 1000,
@@ -64,7 +64,7 @@
                     //Design
                     controlArrows: false,
                     verticalCentered: true,
-                    sectionsColor : ['#ccc', '#ccc'],
+                    sectionsColor : ['#000', '#000', '#000'],
                     paddingTop: '0em',
                     paddingBottom: '0px',
                     fixedElements: '#header, .footer',
@@ -113,11 +113,23 @@
         <!-- Sections -->
         <div id="fullpage">
             <div class="section">
-                    <div class="slide"><img id="gif" src="images/meJ.jpg"></div>
-                    <div class="slide"><img src="images/mw_gif.gif"></div>
+                    <div class="slide">
+                        <img id="gif" src="images/meJ.jpg">
+                        <div class="bottomRight"><a>Bottom Right</a></div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/mw_gif.gif">
+                        <div class="bottomRight"><a>Bottom Right2</a></div>
+                    </div>
                 </div>
-            <div class="section"><img src="images/star-2.jpg"/></div>
-            <div class="section">Section 3</div>
+            <div class="section">
+                <img src="images/star-2.jpg"/>
+                <div class="bottomRight"><a>Bottom Right3</a></div>
+            </div>
+            <div class="section">
+                <img src="images/boomboomboom.jpg">
+                <div class="bottomRight"><a>Bottom Right4</a></div>
+            </div>
         </div>
     </body>
 </html>
