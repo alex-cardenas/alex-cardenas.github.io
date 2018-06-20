@@ -11,7 +11,7 @@ a:hover {
 }
 a:active {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #navbar {
@@ -38,10 +38,6 @@ a:active {
     color: black;
 }
 
-.mainMenuItem:hover {
-    /*background-color: lightskyblue;*/
-}
-
 .mainMenuItem:hover a {
     color: gray;
     transition-duration: 0.3s;
@@ -54,11 +50,26 @@ ul.dropdown {
 
 .subMenu {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #afe;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 22;
+    visibility: shown;
+}
+
+#Galleries:hover {
+    background-color: aqua;
+}
+#Galleries:hover .subMenu {
+    visibility: shown;
+    display: block !important;
+    bottom: 25%;
+    right: 25%;
+    z-index: 50;
+    height: 50px;
+    background-color: yellow !important;
+    top: 50%;
 }
 
 .subMenuItem {
@@ -70,11 +81,6 @@ ul.dropdown {
 
 .subMenuItem a:hover {
     background-color: lightskyblue;
-}
-
-#Galleries:hover .subMenu {
-    visibility: visible;
-    display: block;
 }
 
 
