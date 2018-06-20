@@ -151,6 +151,7 @@ div img {
     max-height: 100vh;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
 
 }
 
@@ -170,4 +171,5 @@ div img {
 
 .fixed {
     position: fixed !important;
+    -webkit-transform: translateZ(0) !important;
 }
