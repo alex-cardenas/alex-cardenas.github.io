@@ -142,6 +142,7 @@ ul li ul:hover {
 div img {
     width: 100vw;
     height: auto;
+    max-height: 100vh;
     background-position: center;
     background-size: cover;
 
@@ -157,7 +158,7 @@ div img {
     z-index: 999;
     color: white;
     bottom: 7%;
-    left: 2%;
+    left: 5%;
     font-size: 20px;
 }
 
