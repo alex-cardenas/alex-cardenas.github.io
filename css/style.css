@@ -43,24 +43,29 @@ a:active {
     transition-duration: 0.3s;
 }
 
-ul.dropdown {
-    position: fixed;
-    display: inline-block;
-}
-
 .subMenu {
     display: none;
-    position: relative;
-    background-color: #afe;
+    list-style: none;
+    position: absolute;
+    background-color: rgba(255,255,255,.7);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 22;
     visibility: shown;
 }
-
+.subMenuItem a {
+    color: black;
+    font-size: 16px;
+}
 #Galleries:hover {
     background-color: aqua;
 }
+
+#Galleries:hover .subMenu {
+    display: block;
+}
+
+/*
 #Galleries:hover .subMenu {
     visibility: shown;
     display: block !important;
@@ -83,9 +88,6 @@ ul.dropdown {
     background-color: lightskyblue;
 }
 
-
-
-/*
 .subMenu {
     visibility: hidden;
     position: absolute;
