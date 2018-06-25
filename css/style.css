@@ -61,7 +61,7 @@ a:active {
     background-color: aqua;
 }
 
-#Galleries:hover .subMenu {
+#Galleries:hover .subMenu { 
     display: block;
 }
 
