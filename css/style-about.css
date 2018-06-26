@@ -33,7 +33,7 @@ header h1 {
 
 .aboutMe {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 25px;
     padding-bottom: 70px;
 }
 
@@ -48,7 +48,7 @@ header h1 {
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .aboutMe h2:after {
@@ -71,6 +71,10 @@ header h1 {
 .aboutMe .leftColumn {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+#name {
+    margin-top: 0px;
 }
 
 .aboutMe .leftColumn img {
