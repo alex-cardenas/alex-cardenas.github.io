@@ -23,12 +23,16 @@ a:active {
     color: black;
 }
 
+#mainMenu {
+    margin-top: 11px;
+}
+
 #navbar .mainMenuItem {
     list-style: none;
     color: black;
     display: block;
     float: left;
-    padding: 0px 17px;
+    padding-right: 17px;
     font-size: 20px;
     transition-duration: 0.5s;
 }
