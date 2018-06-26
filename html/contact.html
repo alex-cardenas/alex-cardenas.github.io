@@ -1,9 +1,39 @@
 <!DOCUTYPE html>
 <html>
     <head>
-        
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <!-- Google Font: Comfortaa -->
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <!-- Custum CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+        <!-- Form Validator -->
+        <script type="text/javascript" src="../js/gen_validatorv4.js"></script>
     </head>
     <body>
-        <p>Hi, this is my Contact page!! It is still under construction but will hopefully be live soon!</p>
+        <div class="wrapper">
+           <div class="layer"></div>
+            <div class="header">
+                <h1>Contact</h1>
+                <p>Tag Line</p>
+            </div>
+            
+            <div class="form">
+                <form id="myform" action="cgi-bin/formmail.pl" method="post">
+                    <input type="text" id="name" placeholder="Name" />
+                    <input type="text" id="email" placeholder="E-Mail" />
+                    <input type="text" id="msg" placeholder="Message" />
+                    <input type="submit" name="submit" value="Let's Talk" />
+                </form>
+                <button type="button">Let's Talk</button>
+                <script type="text/javascript">
+                    var frmvalidator = new Validator('myform');
+                        frmvalidator.addValidation("name", "req", "Please enter your Name");
+                        frmvalidator.addValidation("email", "email");
+                        frmvalidator.addValidation("email", "req");
+                    
+                </script>
+            </div>
+        </div>
     </body>
 </html>
