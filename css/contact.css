@@ -29,14 +29,14 @@ a:active {
     display: block;
     float: left;
     padding: 0px 17px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     transition-duration: 0.5s;
 }
 
 .mainMenuItem a {
     color: black;
-    font-family: 'Comfortaa';
+    font-family: 'Open Sans', sans-serif;
 }
 
 .mainMenuItem:hover a {
@@ -60,7 +60,7 @@ a:active {
 }
 .subMenuItem a {
     display: inline-block;
-    font-family: 'Comfortaa';
+    font-family: 'Open Sans', sans-serif;
     color: black !important;
     font-size: 16px;
     text-align: left;
@@ -89,7 +89,7 @@ body {
     background-position: center;
     background-size: cover;
     display: table;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-shadow: inset 0 0 0 1000px rgba(115, 31, 137,.8);
 }
 

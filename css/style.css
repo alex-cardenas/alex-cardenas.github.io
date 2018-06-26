@@ -29,14 +29,13 @@ a:active {
     display: block;
     float: left;
     padding: 0px 17px;
-    font-family: sans-serif;
     font-size: 20px;
     transition-duration: 0.5s;
 }
 
 .mainMenuItem a {
     color: black;
-    font-family: 'Comfortaa';
+    font-family: 'Open Sans', sans-serif;
 }
 
 .mainMenuItem:hover a {
@@ -47,31 +46,27 @@ a:active {
 .subMenu {
     display: none;
     list-style: none;
-    background-color: rgba(255,255,255,.7);
+    background-color: rgb(48,48,48);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 22;
     text-align: left;
-    padding-left: 5px;
-    padding-top: 11px;
-    font-size: 16px;
-    line-height: 23px;
-    width: 89px
-    
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 100px;
+    margin-top: 11px;
+    margin-left: -6px;
 }
 .subMenuItem a {
-    display: inline-block;
-    font-family: 'Comfortaa';
-    color: black !important;
-    font-size: 16px;
-    text-align: left;
-    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    color: gray!important;
 }
 #Galleries:hover .subMenu {
     display: block;
 }
 
 .subMenuItem a:hover {
-    color: gray !important;
+    color: white !important;
     transition-duration: 0.3s !important;
 }
 
@@ -118,11 +113,14 @@ div img {
     background-position: center;
     background-size: cover;
     object-fit: cover;
+}
 
+.fp-tableCell {
+    display: contents!important; /*User Overide*/
 }
 
 .bottomRight{
-    font-family: 'Comfortaa';
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
     display: block;
     position: absolute;
