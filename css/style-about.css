@@ -73,6 +73,10 @@ header h1 {
     padding-right: 5%;
 }
 
+.aboutMe .rightColumn {
+    padding-right: 15px;
+}
+
 #name {
     margin-top: 0px;
 }
