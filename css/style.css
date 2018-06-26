@@ -55,19 +55,24 @@ a:active {
     padding-top: 11px;
     font-size: 16px;
     line-height: 23px;
-    width: 107px
+    width: 89px
     
 }
 .subMenuItem a {
     display: inline-block;
     font-family: 'Comfortaa';
-    color: black;
+    color: black !important;
     font-size: 16px;
     text-align: left;
     list-style: none;
 }
 #Galleries:hover .subMenu {
     display: block;
+}
+
+.subMenuItem a:hover {
+    color: gray !important;
+    transition-duration: 0.3s !important;
 }
 
 
