@@ -77,7 +77,11 @@ a:active {
 
 body {
     margin: 0px;
-    font-family: 'Comfortaa';
+    /* font-family: 'Comfortaa'; */
+    /* font-family: 'Libre Franklin', sans-serif; */
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: 'Inconsolata', monospace;
+
 }
 
 * {
