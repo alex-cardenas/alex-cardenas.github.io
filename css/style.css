@@ -58,8 +58,9 @@ a:active {
     font-size: 18px;
     line-height: 30px;
     width: 100px;
-    margin-top: 11px;
     margin-left: -6px;
+    position: absolute;
+    top: 100%;
 }
 .subMenuItem a {
     font-family: 'Open Sans', sans-serif;
@@ -67,6 +68,7 @@ a:active {
 }
 #Galleries:hover .subMenu {
     display: block;
+
 }
 
 .subMenuItem a:hover {
