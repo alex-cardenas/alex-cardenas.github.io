@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="../css/stellae.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <!-- FancyBox CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/jquery.fancybox.min.css" />
     <!-- Google Font: Open Sans (Title) Roboto (Text) -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <!-- jQuery -->
@@ -18,6 +20,8 @@
     <script src="../js/popper.min.js"></script>
     <!-- Bootstrap Js -->
     <script src="../js/bootstrap.min.js"></script>
+    <!-- FancyBox Js -->
+    <script src="../js/jquery.fancybox.min.js"></script>
 </head>
 <!-- Navigation Menu -->
 <nav id="navbar">
@@ -43,54 +47,75 @@
         </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
-                <img src="../images/mw_gif.gif" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="../images/ChapelTrailRed.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
-                <img src="../images/360.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="../images/65.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="../images/night2.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="../images/star-1.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="../images/star-2.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="../images/star-3.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="../images/H3Ok_MW.jpg" class="img-responsive">
+                <a href="../images/mw_gif.gif" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="../images/mw_gif.gif" width="360" />
+                </a>
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
-                <img src="../images/lightning-1.jpg" class="img-responsive">
+                <a href="../images/ChapelTrailRed.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="../images/ChapelTrailRed.jpg" width="360" />
+                </a>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="../images/lightning-2.jpg" class="img-responsive">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/360.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="../images/360.jpg" width="360" />
+                </a>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="../images/lightning-3.jpg" class="img-responsive">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/65.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="../images/65.jpg" width="360" />
+                </a>
             </div>
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="../images/lightning-4.jpg" class="img-responsive">
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/night2.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="../images/night2.jpg" width="360" />
+                </a>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/star-1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="../images/star-1.jpg" width="360" />
+                </a>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/star-2.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="../images/star-2.jpg" width="360" />
+                </a>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/star-3.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="../images/star-3.jpg" width="360" />
+                </a>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/lightning-1.jpg" data-fancybox="gallery" data-caption="These lightning photos were taken during a May Storm.  I spent about 4 hours taking 600 photos and about 20 photos had actual lightning in them.">
+                    <img src="../images/lightning-1.jpg" width="360" />
+                </a>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/lightning-2.jpg" data-fancybox="gallery" data-caption="At first, I thought I needed a short shutter to capture the fast lightning (This was my first time taking lightning photos) but I realized long after that I needed the opposite - long exposure times">
+                    <img src="../images/lightning-2.jpg" width="360" />
+                </a>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/lightning-3.jpg" data-fancybox="gallery" data-caption="Most of these photos were taken with my Sony 18-105mm f/4 with the exposure at 30 seconds and aperature of 4.">
+                    <img src="../images/lightning-3.jpg" width="360" />
+                </a>
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <a href="../images/lightning-4.jpg" data-fancybox="gallery" data-caption="These images are titled, 'LightningMcLightFace' ">
+                    <img src="../images/lightning-4.jpg" width="360" />
+                </a>
             </div>
         </div>
     </div>
