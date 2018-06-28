@@ -94,8 +94,7 @@ a:active {
     bottom: 20px; /* Height */
 }
 
-#fp-nav ul li a span, /* This line is for Ver Nav */
-.fp-slidesNav ul li a span /* This line is for Hor Nav */ {
+#fp-nav ul li a span, /* This line is for Ver Nav */ {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -112,6 +111,38 @@ a:active {
     transition: all 0.1s ease-in-out;
 }
 
+#fp-nav ul li a span {
+    background-color: transparent;
+	box-shadow: inset 0 0 0 2px white;
+	-webkit-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+}
+
+#fp-nav ul li:hover a span,
+#fp-nav ul li:focus a span {
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6)
+}
+
+#fp-nav ul li.current a span {
+    box-shadow: inset 0 0 0 8px white;
+}
+
+.dotstyle-fillin li a {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 2px white;
+	-webkit-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+}
+
+.dotstyle-fillin li a:hover,
+.dotstyle-fillin li a:focus {
+	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6)
+}
+
+.dotstyle-fillin li.current a {
+	box-shadow: inset 0 0 0 8px white;
+}
+
 div img {
     width: 100vw;
     height: auto;
@@ -122,7 +153,7 @@ div img {
 }
 
 .fp-tableCell {
-    display: contents!important; /*User Overide*/
+    display: contents!important; /*User Overide for gif image to take up whole page*/
 }
 
 .bottomRight{
