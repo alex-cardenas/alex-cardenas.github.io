@@ -142,13 +142,19 @@ div img {
     letter-spacing: 3px;
     display: block;
     position: absolute;
-    text-align: center;
+    text-align: right;
     text-transform: uppercase;
     z-index: 999;
     color: white;
     bottom: 7%;
     left: 5%;
     font-size: 20px;
+    padding: 5px;
+    padding-right: 3px !important;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 3px;
 }
 
 .fixed {
