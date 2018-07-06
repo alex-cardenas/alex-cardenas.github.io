@@ -161,3 +161,19 @@ header h1 {
 .aboutMe .leftColumn img {
     max-width: 100%;
 }
+
+.gear:link {
+    color: black !important;
+    text-decoration: none;
+}
+.gear:visited {
+    color: black!important;
+}
+.gear:hover {
+    color: dimgray !important;
+    text-decoration: none;
+}
+.gear:active {
+    color: black !important;
+    text-decoration: none;
+}
