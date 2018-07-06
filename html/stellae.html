@@ -126,25 +126,25 @@
                 </a>
             </div>
             
-            <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
-                <a href="../images/stars/boom.jpg" data-fancybox="gallery" data-caption="These images/stars are titled, 'LightningMcLightFace' ">
+            <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <a href="../images/stars/boom.jpg" data-fancybox="gallery" data-caption="These images are titled, 'LightningMcLightFace' ">
                     <img src="../images/stars/boom.jpg" width="Sony 18-105mm at 28mm f/4 ISO800 for 2seconds" />
                 </a>
             </div>
         </div>
     </div>
     
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function() {
             $(".fancybox").fancybox({
-                var defaults = {
+                defaults = {
                     loop: false,
                     gutter: 25,
                     buttons: [
                         //"share",
                         //"slideShow",
                         "fullScreen",
-                        //"download",
+                        "download",
                         "thumbs",
                         "close"
                     ],
@@ -152,7 +152,25 @@
                 }
             });
         });
-        </script>
+    </script> -->
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                loop: false,
+                gutter: 25,
+                buttons: [
+                    //"share",
+                    //"slideShow",
+                    "fullScreen",
+                    "download",
+                    "thumbs",
+                    "close"
+                ],
+                idleTime: 10,
+            });
+        });
+    </script>
 </body>
 
 </html>

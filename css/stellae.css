@@ -15,9 +15,9 @@ a:active {
 }
 
 body {
-    background-image: url(../images/background.png) no-repeat center fixed; 
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-color: dimgray; /* When url is not available  */
 }
 
 #navbar {
