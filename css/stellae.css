@@ -100,7 +100,9 @@ body {
     width: 100%;
 }
 
-
+div img {
+    object-position: center;
+}
 
 .gallery_product
 {
