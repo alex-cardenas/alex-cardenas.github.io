@@ -60,12 +60,11 @@ body {
     line-height: 30px;
     width: 100px;
     margin-left: -6px;
-    /* position: absolute; */
     top: 100%;
 }
 .subMenuItem a {
     font-family: 'Open Sans', sans-serif;
-    color: gray!important;
+    color: gray !important;
 }
 #Galleries:hover .subMenu {
     display: block;
