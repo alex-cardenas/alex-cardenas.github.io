@@ -134,31 +134,11 @@
         </div>
     </div>
     
-    <!-- <script type="text/javascript">
-        $(document).ready(function() {
-            $(".fancybox").fancybox({
-                defaults = {
-                    loop: false,
-                    gutter: 25,
-                    buttons: [
-                        //"share",
-                        //"slideShow",
-                        "fullScreen",
-                        "download",
-                        "thumbs",
-                        "close"
-                    ],
-                    idleTime: 10,
-                }
-            });
-        });
-    </script> -->
-    
     <script type="text/javascript">
         $(document).ready(function() {
            $('[data-fancybox="gallery"]').fancybox({
                 loop: false,
-                gutter: 25,
+                gutter: 01,
                 buttons: [
                     //"share",
                     //"slideShow",
@@ -167,7 +147,14 @@
                     "thumbs",
                     "close"
                 ],
-                idleTime: 10,
+                idleTime: 30,
+               animationEffect: "zoom",
+               transitionEffect: "slide",
+               clickContent: function(current, event) {
+                    return current.type === "image" ? "toggleControls" : false;
+                },
+               // Clicked on the slide
+                clickSlide: "close",
             });
         });
     </script>
