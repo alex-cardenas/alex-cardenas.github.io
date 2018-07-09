@@ -46,37 +46,61 @@
             <h1 class="gallery-title">Stellae</h1>
         </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <a href="../images/grad/meJ.jpg" data-fancybox="gallery" data-caption="">
                     <img src="../images/grad/meJ.jpg" width="360"/>
                 </a>
             </div>
             
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <a href="../images/grad/TreywMiguel.JPG" data-fancybox="gallery" data-caption="">
                     <img src="../images/grad/TreywMiguel.JPG" width="360" height="240"  />
                 </a>
             </div>
             
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <a href="../images/grad/JumpingGrads.JPG" data-fancybox="gallery" data-caption="">
                     <img src="../images/grad/JumpingGrads.JPG" width="360" />
                 </a>
             </div>
             
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <a href="../images/grad/jeph.JPG" data-fancybox="gallery" data-caption="">
                     <img src="../images/grad/jeph.JPG" width="360" />
                 </a>
             </div>
             
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <a href="../images/grad/lisa.JPG" data-fancybox="gallery" data-caption="">
                     <img src="../images/grad/lisa.JPG" width="360" />
                 </a>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+           $('[data-fancybox="gallery"]').fancybox({
+                loop: false,
+                gutter: 01,
+                buttons: [
+                    //"share",
+                    //"slideShow",
+                    "fullScreen",
+                    "download",
+                    "thumbs",
+                    "close"
+                ],
+                idleTime: 30,
+               animationEffect: "zoom",
+               transitionEffect: "slide",
+               clickContent: function(current, event) {
+                    return current.type === "image" ? "toggleControls" : false;
+                },
+               // Clicked on the slide
+                clickSlide: "close",
+            });
+        });
+    </script>
 </body>
 
 </html>
