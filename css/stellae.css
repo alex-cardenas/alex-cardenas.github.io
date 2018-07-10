@@ -104,6 +104,11 @@ body {
     width: 100%;
 }
 
+#panorama {
+    padding-top: 79px !important;
+    padding-bottom: 79px !important;
+}
+
 div img {
     object-position: center;
 }
