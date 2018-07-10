@@ -31,6 +31,7 @@ a:active {
     padding-right: 17px;
     font-size: 20px;
     transition-duration: 0.5s;
+    list-style: none;
 }
 
 .mainMenuItem a {
