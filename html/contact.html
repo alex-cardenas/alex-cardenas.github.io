@@ -10,20 +10,14 @@
         <!-- Form Validator -->
         <script type="text/javascript" src="../js/gen_validatorv4.js"></script>
     </head>
-    <nav id="navbar">
-            <ul id="mainMenu">
-                <li class="mainMenuItem"><a href="../index.html">Home</a></li>
-                <li class="mainMenuItem" id="Galleries"><a>Galleries</a>
-                    <ul class="subMenu">
-                        <li class="subMenuItem"><a href="stellae.html">Stars</a></li>
-                        <li class="subMenuItem"><a href="earth.html">Earth</a></li>
-                        <li class="subMenuItem"><a href="grad.html">Grad 2018</a></li>
-                    </ul>
-                </li>
-                <li class="mainMenuItem"><a href="about.html">About</a></li>
-                <li class="mainMenuItem"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+<!--end of Navigation bar-->
     <body>
         <div class="wrapper">
            <div class="layer"></div>
@@ -32,22 +26,6 @@
                 <p>Tag Line</p>
             </div>
             
-            <div class="form">
-                <form id="myform" action="cgi-bin/formmail.pl" method="post">
-                    <input type="text" id="name" placeholder="Name" />
-                    <input type="text" id="email" placeholder="E-Mail" />
-                    <input type="text" id="msg" placeholder="Message" />
-                    <input type="submit" name="submit" value="Let's Talk" />
-                </form>
-                <button type="button">Let's Talk</button>
-                <script type="text/javascript">
-                    var frmvalidator = new Validator('myform');
-                        frmvalidator.addValidation("name", "req", "Please enter your Name");
-                        frmvalidator.addValidation("email", "email");
-                        frmvalidator.addValidation("email", "req");
-                    
-                </script>
-            </div>
         </div>
     </body>
 </html>
