@@ -85,7 +85,7 @@ object-fit: cover;
     text-align: right;
     text-transform: uppercase;
     z-index: 999;
-    color: white;
+    color: white !important;
     bottom: 7%;
     left: 5%;
     font-size: 20px;
