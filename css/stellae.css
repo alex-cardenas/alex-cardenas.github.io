@@ -45,12 +45,12 @@ body {
 }
 
 #panorama {
-    padding-top: 79px !important;
-    padding-bottom: 79px !important;
+    padding-top: 73px !important;
+    padding-bottom: 73px !important;
 }
 
 div img {
-    object-position: center;
+    object-position: center center;
 }
 
 .gallery_product
