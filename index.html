@@ -4,15 +4,17 @@
         <meta charset="utf-8">
         <title> Alex Cardenas - Portfolio </title>
         <!-- FullPage CSS -->
-        <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <!-- Custum CSS -->
-        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- Nav CSS -->
+        <link rel="stylesheet" type="text/css" href="css/nav.css" />
         <!-- Google Font: Open Sans (Title) Roboto (Text) -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <!-- jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <!-- FullPage js -->
-        <script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
         <!-- FullPage Init -->
         <script type="text/javascript">
             $(document).ready(function() {
@@ -93,25 +95,40 @@
             });
 	</script>
     </head>
+    
+    <!-- Navigation Menu -->
+<nav id="navbar">
+    <ul id="mainMenu">
+        <li class="mainMenuItem"><a href="index.html">Home</a></li>
+        <li class="mainMenuItem" id="Galleries"><a>Galleries</a>
+            <ul class="subMenu">
+                <li class="subMenuItem"><a href="html/stellae.html">Stars</a></li>
+                <li class="subMenuItem"><a href="html/earth.html">Earth</a></li>
+            </ul>
+        </li>
+        <li class="mainMenuItem"><a href="html/about.html">About</a></li>
+        <li class="mainMenuItem"><a href="html/contact.html">Contact</a></li>
+    </ul>
+</nav>
     <body>
         <!--Navigation bar-->
         <div id="nav-placeholder"></div>
         <script>
             $(function(){
-              $("#nav-placeholder").load("nav.html");
+              $("#nav-placeholder").load("html/nav.html");
             });
         </script>
         <!--end of Navigation bar-->
         <!-- Sections -->
         <div id="fullpage">
-            <div class="section" id="firstPage" href="../html/stellae.html">
+            <div class="section" id="firstPage" href="html/stellae.html">
                     <div class="bottomRight">
-                        <a href="../html/stellae.html">Stellae</a>
+                        <a href="html/stellae.html">Stellae</a>
                     </div>
             </div>
-            <div class="section" id="secondPage" href="../html/earth.html">
+            <div class="section" id="secondPage" href="html/earth.html">
                 <div class="bottomRight">
-                    <a href="../html/earth.html">Tierra</a>
+                    <a href="html/earth.html">Tierra</a>
                 </div>
             </div>
         </div>
