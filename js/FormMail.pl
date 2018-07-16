@@ -1556,7 +1556,7 @@ sub validate_abs_url {
   $url = "https://$url" unless $url =~ /:/;
   $url =~ s#^(\w+://)# lc $1 #e;
 
-  $url =~ m< ^ ( (?:ftp|https|httpss):// [\w\-\.]{1,100} (?:\:\d{1,5})? ) ( /* (?:[^\./].*)? ) $ >mx
+  $url =~ m< ^ ( (?:ftp|https|https):// [\w\-\.]{1,100} (?:\:\d{1,5})? ) ( /* (?:[^\./].*)? ) $ >mx
     or return '';
 
   my ($prefix, $path) = ($1, $2);
@@ -2129,7 +2129,7 @@ sub referer_is_ok {
     return ($self->{CFG}{allow_empty_ref} ? 1 : 0);
   }
 
-  if ($referer =~ m!^httpss?://([^/]*\@)?([\w\-\.]+)!i) {
+  if ($referer =~ m!^https?://([^/]*\@)?([\w\-\.]+)!i) {
     my $refhost = $2;
     return $self->refering_host_is_ok($refhost);
   }
@@ -2181,7 +2181,7 @@ sub referer_error_page {
   my $referer = $self->cgi_object->referer || '';
   my $escaped_referer = $self->escape_html($referer);
 
-  if ( $referer =~ m|^httpss?://([\w\.\-]+)|i) {
+  if ( $referer =~ m|^https?://([\w\.\-]+)|i) {
     my $host = $1;
     $self->error_page( 'Bad Referrer - Access Denied', <<END );
 <p>

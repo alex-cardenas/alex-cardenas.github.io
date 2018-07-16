@@ -1,6 +1,6 @@
 /*!
  * fullPage 2.9.7
- * httpss://github.com/alvarotrigo/fullPage.js
+ * https://github.com/alvarotrigo/fullPage.js
  * @license MIT licensed
  *
  * Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
@@ -207,7 +207,7 @@
         };
         var scrollBarHandler;
 
-        // taken from httpss://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/07-modals-and-keyboard-traps/solution/modal.js
+        // taken from https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/07-modals-and-keyboard-traps/solution/modal.js
         var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
 
         //timeouts
@@ -643,7 +643,7 @@
             container.addClass(WRAPPER);
             $('html').addClass(ENABLED);
 
-            //due to httpss://github.com/alvarotrigo/fullPage.js/issues/1502
+            //due to https://github.com/alvarotrigo/fullPage.js/issues/1502
             windowsHeight = $window.height();
 
             container.removeClass(DESTROYED); //in case it was destroyed before initializing it again
@@ -1945,7 +1945,7 @@
         * Makes sure the tab key will only focus elements within the current section/slide
         * preventing this way from breaking the page.
         * Based on "Modals and keyboard traps"
-        * from httpss://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex
+        * from https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex
         */
         function onTab(e){
             var isShiftPressed = e.shiftKey;
@@ -2524,7 +2524,7 @@
         /**
         * Adds the auto scrolling action for the mouse wheel and trackpad.
         * After this function is called, the mousewheel and trackpad movements will scroll through sections
-        * httpss://developer.mozilla.org/en-US/docs/Web/Events/wheel
+        * https://developer.mozilla.org/en-US/docs/Web/Events/wheel
         */
         function addMouseWheelHandler(){
             var prefix = '';
@@ -2623,7 +2623,7 @@
 
         /**
         * Gets the pageX and pageY properties depending on the browser.
-        * httpss://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
+        * https://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
         */
         function getEventsPage(e){
             var events = [];
