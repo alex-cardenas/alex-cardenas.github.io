@@ -1,6 +1,6 @@
 /*!
  * fullPage 2.9.7
- * https://github.com/alvarotrigo/fullPage.js
+ * httpss://github.com/alvarotrigo/fullPage.js
  * @license MIT licensed
  *
  * Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
@@ -207,7 +207,7 @@
         };
         var scrollBarHandler;
 
-        // taken from https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/07-modals-and-keyboard-traps/solution/modal.js
+        // taken from httpss://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/07-modals-and-keyboard-traps/solution/modal.js
         var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
 
         //timeouts
@@ -643,7 +643,7 @@
             container.addClass(WRAPPER);
             $('html').addClass(ENABLED);
 
-            //due to https://github.com/alvarotrigo/fullPage.js/issues/1502
+            //due to httpss://github.com/alvarotrigo/fullPage.js/issues/1502
             windowsHeight = $window.height();
 
             container.removeClass(DESTROYED); //in case it was destroyed before initializing it again
@@ -1197,8 +1197,8 @@
         /**
          * Detecting mousewheel scrolling
          *
-         * http://blogs.sitepointstatic.com/examples/tech/mouse-wheel/index.html
-         * http://www.sitepoint.com/html5-javascript-mouse-wheel/
+         * https://blogs.sitepointstatic.com/examples/tech/mouse-wheel/index.html
+         * https://www.sitepoint.com/html5-javascript-mouse-wheel/
          */
         var prevTime = new Date().getTime();
 
@@ -1945,7 +1945,7 @@
         * Makes sure the tab key will only focus elements within the current section/slide
         * preventing this way from breaking the page.
         * Based on "Modals and keyboard traps"
-        * from https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex
+        * from httpss://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex
         */
         function onTab(e){
             var isShiftPressed = e.shiftKey;
@@ -2144,7 +2144,7 @@
                 }
             }else{
                 //in order to call the functions only when the resize is finished
-                //http://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing
+                //https://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing
                 clearTimeout(resizeId);
 
                 resizeId = setTimeout(function(){
@@ -2479,7 +2479,7 @@
         /**
         * Checks for translate3d support
         * @return boolean
-        * http://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
+        * https://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
         */
         function support3d() {
             var el = document.createElement('p'),
@@ -2524,7 +2524,7 @@
         /**
         * Adds the auto scrolling action for the mouse wheel and trackpad.
         * After this function is called, the mousewheel and trackpad movements will scroll through sections
-        * https://developer.mozilla.org/en-US/docs/Web/Events/wheel
+        * httpss://developer.mozilla.org/en-US/docs/Web/Events/wheel
         */
         function addMouseWheelHandler(){
             var prefix = '';
@@ -2603,7 +2603,7 @@
 
         /*
         * Returns and object with Microsoft pointers (for IE<11 and for IE >= 11)
-        * http://msdn.microsoft.com/en-us/library/ie/dn304886(v=vs.85).aspx
+        * https://msdn.microsoft.com/en-us/library/ie/dn304886(v=vs.85).aspx
         */
         function getMSPointer(){
             var pointer;
@@ -2623,7 +2623,7 @@
 
         /**
         * Gets the pageX and pageY properties depending on the browser.
-        * https://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
+        * httpss://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
         */
         function getEventsPage(e){
             var events = [];
@@ -2895,7 +2895,7 @@
             //anchors can not have the same value as any element ID or NAME
             $.each(options.anchors, function(index, name){
 
-                //case insensitive selectors (http://stackoverflow.com/a/19465187/1081396)
+                //case insensitive selectors (https://stackoverflow.com/a/19465187/1081396)
                 var nameAttr = $document.find('[name]').filter(function() {
                     return $(this).attr('name') && $(this).attr('name').toLowerCase() == name.toLowerCase();
                 });

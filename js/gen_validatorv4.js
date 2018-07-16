@@ -9,7 +9,7 @@
         
     The Form validation script is distributed free from JavaScript-Coder.com
     For updates, please visit:
-    http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+    https://www.javascript-coder.com/html-form/javascript-form-validation.phtml
 
     Questions & comments please send to form.val (at) javascript-coder.com
     -------------------------------------------------------------------------  

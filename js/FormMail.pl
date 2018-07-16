@@ -20,9 +20,9 @@ use vars qw(
 #
 # This program is licensed in the same way as Perl
 # itself. You are free to choose between the GNU Public
-# License <http://www.gnu.org/licenses/gpl.html>  or
+# License <https://www.gnu.org/licenses/gpl.html>  or
 # the Artistic License
-# <http://www.perl.com/pub/a/language/misc/Artistic.html>
+# <https://www.perl.com/pub/a/language/misc/Artistic.html>
 #
 # For help on configuration or installation see the
 # README file or the POD documentation at the end of
@@ -86,7 +86,7 @@ END_OF_CONFIRMATION
 # script to make it a standalone CGI.
 #
 # Inlining performed by NMS inline - see /v2/buildtools/inline
-# in CVS at http://sourceforge.net/projects/nms-cgi for details.
+# in CVS at https://sourceforge.net/projects/nms-cgi for details.
 #
 BEGIN {
 
@@ -145,7 +145,7 @@ sub output_trace_headers {
   }
 
   if (defined $ENV{HTTP_HOST} and $ENV{HTTP_HOST} =~ /^([\w\-\.]{1,100})$/) {
-    $self->print("\t(http-host $1)\n");
+    $self->print("\t(https-host $1)\n");
   }
 
   my $ff = $ENV{HTTP_X_FORWARDED_FOR};
@@ -153,12 +153,12 @@ sub output_trace_headers {
     $ff =~ /^\s*([\w\-\.\[\] ,]{1,200})\s*/ or die
       "malformed X-Forwarded-For [$ff], suspect attack, aborting";
 
-    $self->print("\t(http-x-forwarded-for $1)\n");
+    $self->print("\t(https-x-forwarded-for $1)\n");
   }
 
   my $ref = $ENV{HTTP_REFERER};
   if (defined $ref and $ref =~ /^([\w\-\.\/\:\;\%\@\#\~\=\+\?]{1,100})$/) {
-    $self->print("\t(http-referer $1)\n");
+    $self->print("\t(https-referer $1)\n");
   }
 }
 
@@ -195,7 +195,7 @@ L<CGI::NMS::Script>
 
 =head1 MAINTAINERS
 
-The NMS project, E<lt>http://nms-cgi.sourceforge.net/E<gt>
+The NMS project, E<lt>https://nms-cgi.sourceforge.net/E<gt>
 
 To request support or report bugs, please email
 E<lt>nms-cgi-support@lists.sourceforge.netE<gt>
@@ -403,7 +403,7 @@ sub _smtp_command {
 
 =head1 MAINTAINERS
 
-The NMS project, E<lt>http://nms-cgi.sourceforge.net/E<gt>
+The NMS project, E<lt>https://nms-cgi.sourceforge.net/E<gt>
 
 To request support or report bugs, please email
 E<lt>nms-cgi-support@lists.sourceforge.netE<gt>
@@ -541,7 +541,7 @@ sub endmail {
 
 =head1 MAINTAINERS
 
-The NMS project, E<lt>http://nms-cgi.sourceforge.net/E<gt>
+The NMS project, E<lt>https://nms-cgi.sourceforge.net/E<gt>
 
 To request support or report bugs, please email
 E<lt>nms-cgi-support@lists.sourceforge.netE<gt>
@@ -783,7 +783,7 @@ sub _strip_nonprint_utf8
    #
    # U+FFFE, U+FFFF and U+D800 to U+DFFF are dangerous and
    # should be treated as invalid combinations, according to
-   # http://www.cl.cam.ac.uk/~mgk25/unicode.html
+   # https://www.cl.cam.ac.uk/~mgk25/unicode.html
    #
    $string =~ s%\xEF\xBF[\xBE-\xBF]% %g;
    $string =~ s%\xED[\xA0-\xBF][\x80-\xBF]% %g;
@@ -909,7 +909,7 @@ sub _strip_nonprint_ascii
 
 =head1 MAINTAINERS
 
-The NMS project, E<lt>http://nms-cgi.sourceforge.net/E<gt>
+The NMS project, E<lt>https://nms-cgi.sourceforge.net/E<gt>
 
 To request support or report bugs, please email
 E<lt>nms-cgi-support@lists.sourceforge.netE<gt>
@@ -1003,7 +1003,7 @@ do {
 
 =head1 MAINTAINERS
 
-The NMS project, E<lt>http://nms-cgi.sourceforge.net/E<gt>
+The NMS project, E<lt>https://nms-cgi.sourceforge.net/E<gt>
 
 To request support or report bugs, please email
 E<lt>nms-cgi-support@lists.sourceforge.netE<gt>
@@ -1292,7 +1292,7 @@ sub output_cgi_html_header {
   unless ($self->{CFG}{no_doctype_doc_header}) {
     print <<END;
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 END
   }
 
@@ -1300,7 +1300,7 @@ END
     print "<html>\n";
   }
   else {
-    print qq|<html xmlns="http://www.w3.org/1999/xhtml">\n|;
+    print qq|<html xmlns="https://www.w3.org/1999/xhtml">\n|;
   }
 
   $self->{Done_Header} = 1;
@@ -1485,7 +1485,7 @@ L<CGI::NMS::Charset>, L<CGI::NMS::Script::FormMail>
 
 =head1 MAINTAINERS
 
-The NMS project, E<lt>http://nms-cgi.sourceforge.net/E<gt>
+The NMS project, E<lt>https://nms-cgi.sourceforge.net/E<gt>
 
 To request support or report bugs, please email
 E<lt>nms-cgi-support@lists.sourceforge.netE<gt>
@@ -1537,7 +1537,7 @@ These C<validate_*> methods all return undef if the item passed
 in is invalid, otherwise they return the valid item.
 
 Some of these methods attempt to transform invalid input into valid
-input (for example, validate_abs_url() will prepend http:// if missing)
+input (for example, validate_abs_url() will prepend https:// if missing)
 so the returned valid item may not be the same as that passed in.
 
 The returned value is always detainted.
@@ -1553,10 +1553,10 @@ Validates an absolute URL.
 sub validate_abs_url {
   my ($self, $url) = @_;
 
-  $url = "http://$url" unless $url =~ /:/;
+  $url = "https://$url" unless $url =~ /:/;
   $url =~ s#^(\w+://)# lc $1 #e;
 
-  $url =~ m< ^ ( (?:ftp|http|https):// [\w\-\.]{1,100} (?:\:\d{1,5})? ) ( /* (?:[^\./].*)? ) $ >mx
+  $url =~ m< ^ ( (?:ftp|https|httpss):// [\w\-\.]{1,100} (?:\:\d{1,5})? ) ( /* (?:[^\./].*)? ) $ >mx
     or return '';
 
   my ($prefix, $path) = ($1, $2);
@@ -1661,7 +1661,7 @@ L<CGI::NMS::Script>
 
 =head1 MAINTAINERS
 
-The NMS project, E<lt>http://nms-cgi.sourceforge.net/E<gt>
+The NMS project, E<lt>https://nms-cgi.sourceforge.net/E<gt>
 
 To request support or report bugs, please email
 E<lt>nms-cgi-support@lists.sourceforge.netE<gt>
@@ -2129,7 +2129,7 @@ sub referer_is_ok {
     return ($self->{CFG}{allow_empty_ref} ? 1 : 0);
   }
 
-  if ($referer =~ m!^https?://([^/]*\@)?([\w\-\.]+)!i) {
+  if ($referer =~ m!^httpss?://([^/]*\@)?([\w\-\.]+)!i) {
     my $refhost = $2;
     return $self->refering_host_is_ok($refhost);
   }
@@ -2181,7 +2181,7 @@ sub referer_error_page {
   my $referer = $self->cgi_object->referer || '';
   my $escaped_referer = $self->escape_html($referer);
 
-  if ( $referer =~ m|^https?://([\w\.\-]+)|i) {
+  if ( $referer =~ m|^httpss?://([\w\.\-]+)|i) {
     my $host = $1;
     $self->error_page( 'Bad Referrer - Access Denied', <<END );
 <p>
@@ -3081,7 +3081,7 @@ sub success_page_footer {
         <hr size="1" width="75%" />
         <p align="center">
            <font size="-1">
-             <a href="http://nms-cgi.sourceforge.net/">FormMail</a>
+             <a href="https://nms-cgi.sourceforge.net/">FormMail</a>
              &copy; 2001  London Perl Mongers
            </font>
         </p>
@@ -3209,7 +3209,7 @@ print <<END;
           $error_body
           <hr size="1" />
           <p class="c3">
-            <a href="http://nms-cgi.sourceforge.net/">FormMail</a>
+            <a href="https://nms-cgi.sourceforge.net/">FormMail</a>
             &copy; 2001-2003 London Perl Mongers
           </p>
         </td>
@@ -3241,7 +3241,7 @@ L<CGI::NMS::Script>
 
 =head1 MAINTAINERS
 
-The NMS project, E<lt>http://nms-cgi.sourceforge.net/E<gt>
+The NMS project, E<lt>https://nms-cgi.sourceforge.net/E<gt>
 
 To request support or report bugs, please email
 E<lt>nms-cgi-support@lists.sourceforge.netE<gt>
