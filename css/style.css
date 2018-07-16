@@ -64,17 +64,30 @@ a:active {
     box-shadow: inset 0 0 0 8px white;
 }
 
-div img {
-width: 100vw;
-height: auto;
-max-height: 100vh;
-background-position: center center;
-background-size: cover;
-object-fit: cover;
+/* div img {
+    width: 100vw;
+    height: auto;
+    max-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+} */
+
+#firstPage {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/stars/ChapelTrailRed.jpg);
 }
 
+#secondPage {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/earth/PITA.jpg);
+}
+
+
 .fp-tableCell {
-    display: contents!important; /*User Overide for gif image to take up whole page*/
+    display: contents !important; /*User Overide for gif image to take up whole page*/
 }
 
 .bottomRight{
