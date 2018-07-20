@@ -2,8 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <!-- Site ... -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title> Alex Cardenas - Portfolio </title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120700082-1"></script>
@@ -15,27 +13,19 @@
           gtag('config', 'UA-120700082-1');
         </script>
         <!-- FullPage CSS -->
-        <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <!-- Custum CSS -->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-         <!-- FullPage js -->
-        <script type="text/javascript" src="js/fullpage.min.js"></script>
-        <!-- Bootstrap CSS
-        <link rel="stylesheet" type="text/css" href="css/botstrap.min.css" /> -->
         <!-- Google Font: Open Sans (Title) Roboto (Text) -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <!-- jQuery -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <!-- Pooper Js -->
-        <script src="js/popper.min.js"></script>
-        <!-- Bootstrap Js -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <!-- FullPage js -->
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
         <!-- FullPage Init -->
         <script type="text/javascript">
-                var myFullpage = new fullpage('#fullpage', {
-                    
-                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
                     //Navigation
                     menu: '#menu',
                     lockAnchors: false,
@@ -109,9 +99,8 @@
                     onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 
                 });
-
+            });
 	</script>
-   
     </head>
     
 <!-- Navigation Menu -->
@@ -131,7 +120,7 @@
         <li id="iconMenu"> <span onclick="openNav()">&#9776;</span> </li>
     </ul>
     
-    <!-- <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html">Home</a>
       <a href="#" id="sideNavGallery">
@@ -141,12 +130,12 @@
     </div>
     
     <div id="mySubSidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="html/stellae.html">Stars</a>
-          <a href="html/earth.html">Earth</a>
-    </div> -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="html/stellae.html">Stars</a>
+              <a href="html/earth.html">Earth</a>
+        </div>
 </nav>
-<!-- <script>
+<script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
@@ -162,7 +151,7 @@ function closeNav() {
 function closeNav() {
     document.getElementById("mySubSidenav").style.width = "0";
 }
-</script> -->
+</script>
     <body>
         <!-- Sections -->
         <div id="fullpage">
@@ -177,11 +166,11 @@ function closeNav() {
                 </div>
             </div>
             
-            <!-- <div class="section" id="thirdPage" href="html/lightroom.html">
+            <div class="section" id="thirdPage" href="html/lightroom.html">
                 <div class="bottomRight">
                     <a href="html/lightroom.html">Lightroom</a>
                 </div>
-            </div> -->
+            </div>
         </div>
     </body>
 </html>
