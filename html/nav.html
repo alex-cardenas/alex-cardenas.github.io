@@ -1,5 +1,4 @@
 <!-- Navigation Menu -->
-
 <link rel="stylesheet" type="text/css" href="../css/nav.css" />
 <nav id="navbar">
     <ul id="mainMenu">
@@ -12,5 +11,40 @@
         </li>
         <li class="mainMenuItem"><a href="about.html">About</a></li>
         <li class="mainMenuItem"><a href="contact.html">Contact</a></li>
+        <li id="iconMenu"> <span onclick="openNav()">&#9776;</span> </li>
     </ul>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="#" id="sideNavGallery">
+          <span onclick="openSubNav()">Galleries<i class="arrow right"></i> </span></a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    
+    <div id="mySubSidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="stellae.html">Stars</a>
+              <a href="earth.html">Earth</a>
+        </div>
 </nav>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+    
+function openSubNav() {
+    document.getElementById("mySubSidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    
+function closeNav() {
+    document.getElementById("mySubSidenav").style.width = "0";
+}
+</script>

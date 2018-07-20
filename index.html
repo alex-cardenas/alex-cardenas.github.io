@@ -16,8 +16,6 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <!-- Custum CSS -->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <!-- Nav CSS -->
-        <link rel="stylesheet" type="text/css" href="css/nav.css" />
         <!-- Google Font: Open Sans (Title) Roboto (Text) -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <!-- jQuery -->
@@ -105,7 +103,9 @@
 	</script>
     </head>
     
-    <!-- Navigation Menu -->
+<!-- Navigation Menu -->
+
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
 <nav id="navbar">
     <ul id="mainMenu">
         <li class="mainMenuItem"><a href="index.html">Home</a></li>
@@ -117,7 +117,23 @@
         </li>
         <li class="mainMenuItem"><a href="html/about.html">About</a></li>
         <li class="mainMenuItem"><a href="html/contact.html">Contact</a></li>
+        <li id="iconMenu"> <span onclick="openNav()">&#9776;</span> </li>
     </ul>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="#" id="sideNavGallery">
+          <span onclick="openSubNav()">Galleries<i class="arrow right"></i> </span></a>
+      <a href="html/about.html">About</a>
+      <a href="html/contact.html">Contact</a>
+    </div>
+    
+    <div id="mySubSidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="html/stellae.html">Stars</a>
+              <a href="html/earth.html">Earth</a>
+        </div>
 </nav>
     <body>
         <!-- Sections -->
