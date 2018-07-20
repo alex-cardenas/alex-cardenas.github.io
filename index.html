@@ -104,7 +104,6 @@
     </head>
     
 <!-- Navigation Menu -->
-
 <link rel="stylesheet" type="text/css" href="css/nav.css" />
 <nav id="navbar">
     <li id="iconMenu"> <span onclick="openNav()">&#9776;</span> </li>
@@ -134,13 +133,17 @@
               <a href="javascript:void(0)" class="closebtn" onclick="closeSubNav()">&times;</a>
               <a href="html/stellae.html">Stars</a>
               <a href="html/earth.html">Earth</a>
-        </div>
+    </div>
 </nav>
 
 <script>
+    
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementsByClassName("bottomRight").style.display = "none";
+    var bottomRight = document.getElementsByClassName("bottomRight");
+    for(var i=0; i < bottomRight.length; i++) { 
+        bottomRight[i].style.display = "#BABABA";
+    }
 }
     
 function openSubNav() {
@@ -149,12 +152,16 @@ function openSubNav() {
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementsByClassName("bottomRight").style.display = "block";
+    var bottomRight = document.getElementsByClassName("bottomRight");
+    for(var i=0; i < bottomRight.length; i++) { 
+        bottomRight[i].style.color = "white";
+    }
 }
     
 function closeSubNav() {
     document.getElementById("mySubSidenav").style.width = "0";
 }
+    
 </script>
    
     <body>
