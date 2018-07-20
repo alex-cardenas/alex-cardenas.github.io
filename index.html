@@ -145,6 +145,7 @@ function openNav() {
     for(var i=0; i < bottomRight.length; i++) { 
         bottomRight[i].style.display = "#BABABA";
     }
+    document.getElementById("mainMenu").style.display = "none";
 }
     
 function openSubNav() {
@@ -157,6 +158,7 @@ function closeNav() {
     for(var i=0; i < bottomRight.length; i++) { 
         bottomRight[i].style.color = "white";
     }
+    document.getElementById("mainMenu").style.display = "block";
 }
     
 function closeSubNav() {
