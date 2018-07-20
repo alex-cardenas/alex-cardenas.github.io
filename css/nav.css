@@ -15,7 +15,7 @@ a:active {
 } */
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
     #navbar {
         width: 100%;
         height: 50px;
