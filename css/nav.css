@@ -14,6 +14,13 @@ a:active {
     text-decoration: none;
 } */
 
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width : 750px) {
+    .mainMenuItem a {
+        color: orange;
+    }
+}
+
 #navbar {
     width: 100%;
     height: 50px;
@@ -27,7 +34,6 @@ a:active {
 }
 #navbar .mainMenuItem {
     list-style: none;
-    color: black;
     display: block;
     float: left;
     padding-right: 17px;
