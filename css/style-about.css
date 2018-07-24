@@ -14,92 +14,190 @@ a:active {
     text-decoration: none;
 }
 
-body {
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
+/* -- Smartphones (portrait and landscape) -- */
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
 
+    * {
+        box-sizing: border-box;
+    }
+
+    header {
+        padding-top: 100px;
+        background-image: url('../images/panorama.jpg');
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header p {
+        margin: 0px;
+        font-size: 20px;
+        color: white;
+    }
+
+    header h1 {
+        color: white;
+        font-size: 50px;
+    }
+
+    .topAbout {
+        text-align: center;
+    }
+
+    .aboutMe {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+
+    .aboutMe:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .aboutMe h2 {
+        color: #333;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .aboutMe h2:after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        margin-left: -50px;
+        left: 50%;
+        bottom: 0px;
+        background-color: gray;
+    }
+
+    .aboutMe .leftColumn,
+    .aboutMe .description {
+        /* float: left; */
+    }
+
+    .aboutMe .leftColumn {
+        padding-left: 5%;
+        /* padding-right: 5%; */
+        width: 100%;
+        /* position: fixed; */
+        /* top: 199px; */
+        margin-right: 0%;
+    }
+
+    .aboutMe .description {
+        padding: 0% 3%;
+    }
+
+    #name {
+        margin-top: 0px;
+    }
+
+    .aboutMe .leftColumn img {
+        max-width: 50%;
+        padding-top: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-* {
-    box-sizing: border-box;
-}
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
 
-header {
-    padding-top: 100px;
-    background-image: url('../images/panorama.jpg');
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-header p {
-    margin: 0px;
-    font-size: 20px;
-    color: white;
-}
+    header {
+        padding-top: 100px;
+        background-image: url('../images/panorama.jpg');
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-header h1 {
-    color: white;
-    font-size: 50px;
-}
+    header p {
+        margin: 0px;
+        font-size: 20px;
+        color: white;
+    }
 
-.topAbout {
-    text-align: center;
-}
+    header h1 {
+        color: white;
+        font-size: 50px;
+    }
 
-.aboutMe {
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 70px;
-}
+    .topAbout {
+        text-align: center;
+    }
 
-.aboutMe:after {
-    content: '';
-    display: block;
-    clear: both;
-}
+    .aboutMe {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
 
-.aboutMe h2 {
-    color: #333;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    margin-bottom: 50px;
-}
+    .aboutMe:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
 
-.aboutMe h2:after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 2px;
-    margin-left: -50px;
-    left: 50%;
-    bottom: 0px;
-    background-color: gray;
-}
+    .aboutMe h2 {
+        color: #333;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 50px;
+    }
 
-.aboutMe .leftColumn,
-.aboutMe .rightColumn {
-    width: 50%;
-    float: left;
-}
+    .aboutMe h2:after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        margin-left: -50px;
+        left: 50%;
+        bottom: 0px;
+        background-color: gray;
+    }
 
-.aboutMe .leftColumn {
-    padding-left: 5%;
-    padding-right: 5%;
-}
+    .aboutMe .leftColumn,
+    .aboutMe .description {
+        width: 50%;
+        float: left;
+    }
 
-.aboutMe .rightColumn {
-    padding-right: 25px;
-}
+    .aboutMe .leftColumn {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-#name {
-    margin-top: 0px;
-}
+    .aboutMe .description {
+        padding: 0% 3%;
+    }
 
-.aboutMe .leftColumn img {
-    max-width: 100%;
+    #name {
+        margin-top: 0px;
+    }
+
+    .aboutMe .leftColumn img {
+        max-width: 100%;
+    }
 }
 
 .gear:link {
