@@ -1,6 +1,7 @@
 <!-- Navigation Menu -->
 <link rel="stylesheet" type="text/css" href="../css/nav.css" />
 <nav id="navbar">
+    <li id="iconMenu"> <span onclick="openNav()">&#9776;</span> </li>
     <ul id="mainMenu">
         <li class="mainMenuItem"><a href="../index.html">Home</a></li>
         <li class="mainMenuItem" id="Galleries"><a>Galleries</a>
@@ -11,7 +12,6 @@
         </li>
         <li class="mainMenuItem"><a href="about.html">About</a></li>
         <li class="mainMenuItem"><a href="contact.html">Contact</a></li>
-        <li id="iconMenu"> <span onclick="openNav()">&#9776;</span> </li>
     </ul>
     
     <div id="mySidenav" class="sidenav">
@@ -32,8 +32,14 @@
 
 
 <script>
+    
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+    var bottomRight = document.getElementsByClassName("bottomRight");
+    for(var i=0; i < bottomRight.length; i++) { 
+        bottomRight[i].style.display = "#BABABA";
+    }
+    document.getElementById("mainMenu").style.display = "none";
 }
     
 function openSubNav() {
@@ -42,9 +48,15 @@ function openSubNav() {
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    var bottomRight = document.getElementsByClassName("bottomRight");
+    for(var i=0; i < bottomRight.length; i++) { 
+        bottomRight[i].style.color = "white";
+    }
+    document.getElementById("mainMenu").style.display = "block";
 }
     
 function closeSubNav() {
     document.getElementById("mySubSidenav").style.width = "0";
 }
+    
 </script>
