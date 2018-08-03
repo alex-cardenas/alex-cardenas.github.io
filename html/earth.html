@@ -31,6 +31,8 @@
     <script src="../js/bootstrap.min.js"></script>
     <!-- FancyBox Js -->
     <script src="../js/jquery.fancybox.min.js"></script>
+    <!-- FancyBox Options Js -->
+    <script type="text/javascript" src="../js/fancyboxOptions.js"></script>
 </head>
 <!--Navigation bar-->
 <div id="nav-placeholder"></div>
@@ -200,30 +202,6 @@
             
         </div>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function() {
-           $('[data-fancybox="gallery"]').fancybox({
-                loop: false,
-                gutter: 01,
-                buttons: [
-                    //"share",
-                    //"slideShow",
-                    "fullScreen",
-                    "download",
-                    "thumbs",
-                    "close"
-                ],
-                idleTime: 30,
-               animationEffect: "zoom",
-               transitionEffect: "slide",
-               clickContent: function(current, event) {
-                    return current.type === "image" ? "toggleControls" : false;
-                },
-               // Clicked on the slide
-                clickSlide: "close",
-            });
-        });
-    </script>
 </body>
 
 </html>
