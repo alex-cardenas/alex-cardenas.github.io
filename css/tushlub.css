@@ -57,8 +57,8 @@ p {
 .gallery-title:after {
     content: "";
     position: absolute;
-    width: 6%;
-    left: 47%;
+    width: 10%;
+    left: 45%;
     height: 45px;
     border-bottom: 1px solid #5e5e5e;
 }
