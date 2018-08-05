@@ -18,11 +18,11 @@ body {
     /* background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: #ffffd3 !important;
+    background-color: #fffcea !important;
 }
 
  #navbar {
-    background-color: #ffffd3 !important;
+    background-color: #fffcea !important;
     border-bottom: solid;
     border-color: black;
     border-width: 1px;
@@ -42,6 +42,7 @@ body {
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    text-align: center;
 }
 
 .parentDescription {
