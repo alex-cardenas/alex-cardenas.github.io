@@ -12,7 +12,8 @@ $(document).ready(function() {
         ],
         idleTime: 30,
         animationEffect: "zoom",
-        transitionEffect: "slide",
+        transitionEffect: "fade",
+        transitionDuration: 200,
         clickContent: function(current, event) {
             return current.type === "image" ? "toggleControls" : false;
         },
