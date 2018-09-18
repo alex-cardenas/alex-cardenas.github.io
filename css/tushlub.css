@@ -1,3 +1,5 @@
+/*
+
 a:link {
     color: black;
     text-decoration: none;
@@ -13,7 +15,7 @@ a:active {
     color: black;
     text-decoration: none;
 }
-
+*/
 body {
     /* background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -64,9 +66,20 @@ p {
     border-bottom: 1px solid #5e5e5e;
 }
 
+.long {
+    /*width: 50% !important;*/
+}
 .gallery_product
 {
     margin-bottom: 20px;
     padding: 0px 10px !important;
+}
 
+.gallery_product a {
+    image-orientation: from-image !important;
+}
+
+img {
+    image-orientation: from-image;
+    transform: rotate(180);
 }
