@@ -57,5 +57,23 @@ div img {
 {
     margin-bottom: 20px;
     padding: 0px 10px !important;
-
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    position: absolute;
+    background-size: cover;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+}
+/*
+
+#bootstrap-overrider {
+    background-color: #2c2e43;
+}*/
