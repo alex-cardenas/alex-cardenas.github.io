@@ -33,6 +33,8 @@
     <script src="../js/jquery.fancybox.min.js"></script>
     <!-- FancyBox Options Js -->
     <script type="text/javascript" src="../js/fancyboxOptions.js"></script>
+    <!-- Background Particle Js; Created by https://marcbruederlin.github.io/particles.js/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </head>
 
 <!--Navigation bar-->
@@ -45,7 +47,7 @@
 <!--end of Navigation bar-->
 
 
-<body>
+<body id="bootstrap-overrider">
     <div class="container">
         <div class="row">
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -168,6 +170,23 @@
             </div>
         </div>
     </div>
+    
+    <canvas class="background"></canvas>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    
+    <script> 
+        window.onload = 
+            function() {
+              Particles.
+            init
+            ({
+                selector: 
+            '.background'
+              });
+            };
+    </script>
+    
 </body>
 
 </html>

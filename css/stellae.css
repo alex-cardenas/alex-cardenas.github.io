@@ -14,11 +14,13 @@ a:active {
     text-decoration: none;
 }
 
+/*
 body {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+*/
 
 .gallery-title {
     font-size: 36px;
@@ -58,4 +60,21 @@ div img {
     margin-bottom: 20px;
     padding: 0px 10px !important;
 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index
+    : 0;
+}
+
+#bootstrap-overrider {
+    background-color: #555555;
 }
