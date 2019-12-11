@@ -1,0 +1,90 @@
+<!DOCUTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Site ... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Stellae Gallery </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120700082-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120700082-1');
+    </script>
+    <!-- Custum CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/stellae.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <!-- FancyBox CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/jquery.fancybox.min.css" />
+    <!-- Google Font: Open Sans (Title) Roboto (Text) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Pooper Js -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- FancyBox Js -->
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <!-- FancyBox Options Js -->
+    <script type="text/javascript" src="../js/fancyboxOptions.js"></script>
+    <!-- Background Particle Js; Created by https://marcbruederlin.github.io/particles.js/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+</head>
+
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+<script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+</script>
+<!--end of Navigation bar-->
+
+
+<body id="bootstrap-overrider">
+    <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <!-- Initites the Particle.js behind the Title -->
+            <canvas class= "background"></canvas>
+            <h1 class="gallery-title">Before &amp; After Photos</h1>
+        </div>
+
+           <!--  <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
+                <a href="../images/mw_gif.gif" data-fancybox="gallery" data-caption="Sigma 16mm f/1.4 20sec ISO1000 - total of 41 images/stars spanning 14 mins - June 4th, 2018.  ">
+                    <img src="../images/mw_gif.gif" width="100%" />
+                </a>
+            </div> -->
+
+           <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
+                <a href="../images/stars/m42_lrgb_v2.jpg" data-fancybox="gallery" data-caption="Orion Nebula M42 on November 6, 2019, 18°F around midnight. This is a stacked photo taken from Carleton College at Goodsell Oberservatory using their 8 inch Meade LX200 telescope and SBIG STF-8300M CCD camera. This is 16 minutes of exposure [40x20second Luminance. 20x20second of Red, Green, Blue exposures. 20x20second dark exposures] Each channel was aligned and stacked in DeepSkyStacker with darks subtracted. All channels were aligned with each other in Photoshop with level, curves, saturation, brightness, and color balance adjustments applied.">
+                    <img src="../images/stars/thumbnails/m42_lrgb_v2.jpg" width="100%" />
+                </a>
+            </div>
+            
+           
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    
+    <script> 
+        window.onload = 
+            function() {
+              Particles.init
+                ({
+                    selector: '.background',
+                    color: ['#f5f0f0', '#faa046', '#f2cb0a' ,'#000000'],
+                    maxParticles: 75,
+                    sizeVariations: 5,
+                });
+            };
+    </script>
+</body>
+
+</html>
