@@ -33,6 +33,8 @@
     <script src="../js/jquery.fancybox.min.js"></script>
     <!-- FancyBox Options Js -->
     <script type="text/javascript" src="../js/fancyboxOptions.js"></script>
+    <!-- Background Particle Js; Created by https://marcbruederlin.github.io/particles.js/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </head>
 <!--Navigation bar-->
 <div id="nav-placeholder"></div>
@@ -47,7 +49,9 @@
     <div class="container">
         <div class="row">
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="gallery-title">Tierra</h1>
+             <!-- Initites the Particle.js behind the Title -->
+             <canvas class= "background"></canvas>
+             <h1 class="gallery-title">Tierra</h1>
         </div>
 
             <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -202,6 +206,20 @@
             
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    
+    <script> 
+        window.onload = 
+            function() {
+              Particles.init
+                ({
+                    selector: '.background',
+                    color: ['#246024', '#00ccff', '#943E0F' ,'#fff'],
+                    maxParticles: 50,
+                    sizeVariations: 5,
+                });
+            };
+    </script>
 </body>
 
 </html>

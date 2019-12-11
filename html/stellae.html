@@ -51,6 +51,8 @@
     <div class="container">
         <div class="row">
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <!-- Initites the Particle.js behind the Title -->
+            <canvas class= "background"></canvas>
             <h1 class="gallery-title">Stellae</h1>
         </div>
 
@@ -170,9 +172,6 @@
             </div>
         </div>
     </div>
-    
-    <canvas class="background"></canvas>
-  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     
     <script> 
@@ -182,12 +181,11 @@
                 ({
                     selector: '.background',
                     color: ['#f5f0f0', '#faa046', '#f2cb0a' ,'#000000'],
-                    maxParticles: 250,
+                    maxParticles: 75,
                     sizeVariations: 5,
                 });
             };
     </script>
-    
 </body>
 
 </html>
