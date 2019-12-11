@@ -71,9 +71,10 @@ html, body {
     display: block;
     top: 0;
     left: 0;
+    bottom: 0;
     z-index: -10;
 }
 
 #bootstrap-overrider {
-    background-color: #555555;
+    background-color: #ababab;
 }
