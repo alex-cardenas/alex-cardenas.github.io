@@ -4,7 +4,28 @@ body{
 
 .intro{
     background-color: #333;
-    margin: 10% 10%;
+    margin: 6% 12%;
+    padding-top: 25;
+    padding-bottom: 25;
+}
+
+.gallery-title {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.subheading{
+    font-size: 26px;
+    color: ghostwhite;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
 }
 
 .twentytwenty-container{
@@ -22,23 +43,3 @@ img{
     max-width: 100%
     }
 
-.gallery-title {
-    font-size: 36px;
-    color: white;
-    text-align: center;
-    font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 70px;
-    margin-top: 90px;
-    z-index: 1;
-}
-
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 27%;
-    left: 37%;
-    height: 42px;
-    border-bottom: 1px solid #5e5e5e;
-    z-index: 0;
-}
