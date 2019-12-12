@@ -1,27 +1,21 @@
 <!DOCUTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <!-- Site ... -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> Before &amp; After </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before &amp; After</title>
+    
+    <!-- Github.com/Zurb/TwentyTwenty -->
+    <link rel="stylesheet" href="../js/twentytwenty-master/css/twentytwenty.css">
     
     <!-- Custum CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/before_after.css" />
-    <!-- Bootstrap CSS -->
-<!--    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />-->
-   
-    <!-- Google Font: Open Sans (Title) Roboto (Text) -->
+    <link rel="stylesheet" href="../css/before_after.css" />
+    
+    <!-- Google Font: Open Sans (Title) Roboto (Text)-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- Pooper Js -->
-<!--    <script src="../js/popper.min.js"></script>-->
-    <!-- Bootstrap Js -->
-<!--    <script src="../js/bootstrap.min.js"></script>-->
+    
 </head>
-
 <!--Navigation bar-->
 <div id="nav-placeholder"></div>
 <script>
@@ -32,90 +26,23 @@
 <!--end of Navigation bar-->
 
 
-<!--
-<body id="bootstrap-overrider">
-    <div class="container">
-        <div class="row">
-        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="gallery-title">Before &amp; After Photos</h1>
-            </div>
-           <div class="gallery_product">
-                <img src="../images/stars/m42_lrgb_v2.jpg" width="80%" />
-            </div>
-        </div>
-        
-        
-        
-    </div>
-    
-    <div class="container">
-        <span class="image1"></span>
-        <span class="image2"></span>
-        <div class="cover"></div>
-    </div>
-    
-    <script>
-        $(function(){
-          var containerWidth = 190;
-          // var intervalFlag = false;
-          // var updateIntervalFlag;
-          $(".cover").mouseenter(function(){
-            $(".image1").css("transition", "initial");
-            // updateIntervalFlag = setInterval(() => intervalFlag = true, 25);
-          });
-          $(".cover").mousemove(function(e){
-            // if(intervalFlag){
-            //   intervalFlag = false;
-              var cursorX = e.clientX - $(this).offset().left;
-              var percentage = cursorX/containerWidth * 100;
-              $(".image1").css("width", percentage + "%");
-            // }
-          });
-          $(".cover").mouseleave(function(){
-            $(".image1").css("transition", "width 0.3s");
-            $(".image1").css("width", "50%");
-            // clearInterval(updateIntervalFlag);
-          }); 
-        });
-    </script>
-    
-</body>
--->
-
-
 <body>
-     <h1 class="gallery-title">Before &amp; After Photos</h1>
-     <div class="container">
-         <span class="image1"></span>
-         <span class="image2"></span>
-         <div class="cover"></div>
-     </div>
-  
-  <!-- Mouse Over Picture Js taken from: https://stackoverflow.com/questions/44083396/change-between-two-images-based-on-mouse-location -->
-  <script>
-        $(function(){
-          var containerWidth = 190;
-          // var intervalFlag = false;
-          // var updateIntervalFlag;
-          $(".cover").mouseenter(function(){
-            $(".image1").css("transition", "initial");
-            // updateIntervalFlag = setInterval(() => intervalFlag = true, 25);
-          });
-          $(".cover").mousemove(function(e){
-            // if(intervalFlag){
-            //   intervalFlag = false;
-              var cursorX = e.clientX - $(this).offset().left;
-              var percentage = cursorX/containerWidth * 100;
-              $(".image1").css("width", percentage + "%");
-            // }
-          });
-          $(".cover").mouseleave(function(){
-            $(".image1").css("transition", "width 0.3s");
-            $(".image1").css("width", "50%");
-            // clearInterval(updateIntervalFlag);
-          }); 
-        });
-    </script>
+    <div class="intro">
+        <h1 class="gallery-title">Before &amp; After Images</h1>
+        <p>talktja</p>
+    </div>
+   
+    <div class="twentytwenty-container">
+        <img src="../images/stars/ds9.jpg">
+        <img src="../images/stars/m42_lrgb_v2.jpg">
+    </div>
+   
+   <!-- jQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/twentytwenty-master/js/jquery.event.move.js"></script>
+    <script src="../js/twentytwenty-master/js/jquery.twentytwenty.js"></script>
+    <!-- Image Slider help from https://www.youtube.com/watch?v=5cHxdyQvtCs -->
+    <script src="../js/before_after.js"></script>
 </body>
 
 </html>
