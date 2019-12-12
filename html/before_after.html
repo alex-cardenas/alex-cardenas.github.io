@@ -1,0 +1,62 @@
+<!DOCUTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before &amp; After</title>
+    
+    <!-- Github.com/Zurb/TwentyTwenty -->
+    <link rel="stylesheet" href="../js/twentytwenty-master/css/twentytwenty.css">
+    
+    <!-- Custum CSS -->
+    <link rel="stylesheet" href="../css/before_after.css" />
+    
+    <!-- Google Font: Open Sans (Title) Roboto (Text)-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    
+</head>
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+<script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+</script>
+<!--end of Navigation bar-->
+
+
+<body>
+    <div class="intro">
+        <h1 class="gallery-title">Before &amp; After</h1>
+        <h2 class="sub_heading">The Power of Post-Processing</h2>
+    </div>
+    <div class="sub_intro">
+        <p class="intro_body">
+            Most images are taken with a black-and-white CCD camera (a camera specialized for astrophotography) as FITS.
+            <br><br>
+            Post-Processing is done in many steps but the most important is to combine the different channels of black-and-whites to create a color image.
+        </p>
+    </div>
+   
+    <div class="twentytwenty-container">
+        <img src="../images/stars/ds9.jpg">
+        <img src="../images/stars/m42_lrgb_v2.jpg">
+    </div>
+    
+    <div class="twentytwenty-container">
+        <img src="../images/stars/ds9.jpg">
+        <img src="../images/stars/m42_lrgb_v2.jpg">
+    </div>
+    
+    
+   
+   <!-- jQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/twentytwenty-master/js/jquery.event.move.js"></script>
+    <script src="../js/twentytwenty-master/js/jquery.twentytwenty.js"></script>
+    <!-- Image Slider help from https://www.youtube.com/watch?v=5cHxdyQvtCs -->
+    <script src="../js/before_after.js"></script>
+</body>
+
+</html>
