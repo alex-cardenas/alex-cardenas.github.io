@@ -36,6 +36,9 @@ body {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(97, 97, 97, 0.7);
+    padding: 20pt 50pt 20pt;
+    
 }
 
 .header h1 {
@@ -46,6 +49,10 @@ body {
 
 .header p {
     color: #fff;
-    font-size: 12px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
+
+/* .info {
+    background-color: rgba(162, 187, 255, 0.705)
+} */
