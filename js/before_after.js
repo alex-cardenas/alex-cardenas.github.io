@@ -1,4 +1,4 @@
-$(window).onload(function(){
+$(window).load(function(){
                   
     $(".twentytwenty-container").twentytwenty()
    
